@@ -4,14 +4,14 @@
 
 ACCController::ACCController() {
     // --- 1. 물리 단위 파라미터 (튜닝) ---
-    m_maxSpeed_ms = 1.2;      // [1.5m/s일 때 -> 명령 100]
-    m_baseSpeed_ms = 1.0;     // [1.0m/s일 때 -> 명령 80] (목표 달성!)
+    m_maxSpeed_ms = 1.0;      // [1.5m/s일 때 -> 명령 100]
+    m_baseSpeed_ms = 0.8;     // [1.0m/s일 때 -> 명령 80] (목표 달성!)
     m_stopDistance_m = 0.4;   // (안전 강화) 정지 거리를 30cm -> 40cm로 약간 늘림
-    m_targetSafeDistance_m = 1.0; // (안전 강화) 목표 안전 거리를 80cm -> 1m로 늘림
-    m_acc_Kp = 0.6;           // (부드럽게) 속도 변화 반응성을 0.8 -> 0.6으로 낮춤
+    m_targetSafeDistance_m = 1.2; // (안전 강화) 목표 안전 거리를 80cm -> 1m로 늘림
+    m_acc_Kp = 0.4;           // (부드럽게) 속도 변화 반응성을 0.8 -> 0.6으로 낮춤
 
     // --- 2. 모터 명령 변환 파라미터 ---
-    m_speedCmd_Max = 90;
+    m_speedCmd_Max = 85;
     m_speedCmd_Min_Run = 40;  // 40 이하는 모터가 안 돈다고 가정
 }
 

@@ -28,9 +28,15 @@ static atomic<bool> g_running{true};
 static void on_sigint(int){ g_running.store(false); cerr << "\n[SYS] SIGINT\n"; }
 
 static string build_motor_cmd(int drive_mode, int base_speed) {
+    static const int STRAIGHT_CAP = 45; // upper
     int Rspd=0, Lspd=0;
     int Rdir=1, Ldir=1;
-    if (drive_mode == 0) { Rspd = base_speed; Lspd = base_speed; }
+    if (drive_mode == 0) {
+	   int capped = std::min(base_speed, STRAIGHT_CAP); 
+	    Rspd = base_speed; 
+	    Lspd = base_speed;
+
+    }
     else if (drive_mode < 0) { Rspd = base_speed + TURN_DELTA; Lspd = 0; }
     else { Rspd = 0; Lspd = base_speed + TURN_DELTA; }
     Rspd = max(0, min(100, Rspd)); Lspd = max(0, min(100, Lspd));
