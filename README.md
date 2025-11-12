@@ -77,13 +77,17 @@
 
 <br><br><br>
 
-## CAN Architecture
-### CAN BUS
-<img width="476" height="299" alt="image" src="https://github.com/user-attachments/assets/607a7689-0e6f-4ab1-abf8-ddd09594fd56" />
+## Adaptive Cruise Control
+### ACC
+<img width="983" height="497" alt="Image" src="https://github.com/user-attachments/assets/d77e39ec-214f-4754-abf1-8dd789c98a79" />
 
 <br>
 
-<img width="470" height="298" alt="image" src="https://github.com/user-attachments/assets/83c81907-6698-4100-885b-7c0d1b9af16f" />
+<img width="990" height="393" alt="Image" src="https://github.com/user-attachments/assets/5c975614-8857-4802-be28-02ad92d1690a" />
+
+<br>
+
+<img width="998" height="520" alt="Image" src="https://github.com/user-attachments/assets/37a1c004-81e1-42d0-9ea5-4efdf1478f80" />
 
 <br>
 
