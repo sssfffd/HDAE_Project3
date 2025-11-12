@@ -91,8 +91,8 @@
 
 <br>
 
-### CAN FRAME
-<img width="652" height="294" alt="image" src="https://github.com/user-attachments/assets/d2113149-daea-4130-b9d2-c759bd8f92c5" />
+## Object Detection
+<img width="972" height="516" alt="Image" src="https://github.com/user-attachments/assets/0ec31cf0-6227-4a28-8a40-61d0c881e7aa" />
 
 
 <br><br><br>
