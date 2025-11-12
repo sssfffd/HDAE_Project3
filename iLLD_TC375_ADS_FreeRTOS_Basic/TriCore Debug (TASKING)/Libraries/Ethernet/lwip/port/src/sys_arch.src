@@ -1,0 +1,5069 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
+	.compiler_invocation	"ctc -f cc25704a --dep-file=Libraries/Ethernet/lwip/port/src/sys_arch.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc37x -D__CPU_TC37X__ --core=tc1.6.2 --fp-model=+float -D__CPU__=tc37x -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\App -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\BSW -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\BSW\\\\Driver -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\BSW\\\\IO -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\BSW\\\\etc -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Configurations -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Ethernet -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Ethernet\\\\Phy_Dp83825i -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Ethernet\\\\lwip -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Ethernet\\\\lwip\\\\port -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Ethernet\\\\lwip\\\\port\\\\include -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Ethernet\\\\lwip\\\\port\\\\include\\\\arch -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Ethernet\\\\lwip\\\\src -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Ethernet\\\\lwip\\\\src\\\\include -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Ethernet\\\\lwip\\\\src\\\\include\\\\compat -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Ethernet\\\\lwip\\\\src\\\\include\\\\compat\\\\posix -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Ethernet\\\\lwip\\\\src\\\\include\\\\compat\\\\posix\\\\arpa -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Ethernet\\\\lwip\\\\src\\\\include\\\\compat\\\\posix\\\\net -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Ethernet\\\\lwip\\\\src\\\\include\\\\compat\\\\posix\\\\sys -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Ethernet\\\\lwip\\\\src\\\\include\\\\compat\\\\stdc -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Ethernet\\\\lwip\\\\src\\\\include\\\\lwip -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Ethernet\\\\lwip\\\\src\\\\include\\\\lwip\\\\apps -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Ethernet\\\\lwip\\\\src\\\\include\\\\lwip\\\\priv -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Ethernet\\\\lwip\\\\src\\\\include\\\\lwip\\\\prot -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Ethernet\\\\lwip\\\\src\\\\include\\\\netif -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Ethernet\\\\lwip\\\\src\\\\include\\\\netif\\\\ppp -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Ethernet\\\\lwip\\\\src\\\\include\\\\netif\\\\ppp\\\\polarssl -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Infra -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Infra\\\\Platform -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Infra\\\\Sfr -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Infra\\\\Sfr\\\\TC37A\\\\_Reg -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Infra\\\\Ssw -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Infra\\\\Ssw\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Service -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Service\\\\CpuGeneric -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Asc -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Asclin\\\\Std -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Can -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Can\\\\Std -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Irq -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Std -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Cpu\\\\Trap -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Adc -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Evadc\\\\Std -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Geth -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Geth\\\\Eth -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Geth\\\\Std -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12 -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gpt12\\\\Std -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Gtm\\\\Std -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Mtu\\\\Std -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Pms\\\\Std -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Io -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Port\\\\Std -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Scu\\\\Std -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Src\\\\Std -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\Stm\\\\Std -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Impl -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_Lib\\\\DataHandling -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\\\_PinMap -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\OS -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\OS\\\\FreeRTOS -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\OS\\\\FreeRTOS\\\\include -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\OS\\\\FreeRTOS\\\\portable -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\OS\\\\FreeRTOS\\\\portable\\\\Tasking -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\OS\\\\FreeRTOS\\\\portable\\\\Tasking\\\\TC3 -IC:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\examples -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o Libraries/Ethernet/lwip/port/src/sys_arch.src ../Libraries/Ethernet/lwip/port/src/sys_arch.c"
+	.compiler_name		"ctc"
+	;source	'../Libraries/Ethernet/lwip/port/src/sys_arch.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.portmacro.vPortSetCCPN',code,cluster('vPortSetCCPN')
+	.sect	'.text.portmacro.vPortSetCCPN'
+	.align	2
+	
+; Function vPortSetCCPN
+.L112:
+vPortSetCCPN:	.type	func
+	disable
+.L499:
+	mfcr	d15,#65068
+.L500:
+	insert	d0,d15,#0,#0,#8
+.L501:
+	and	d15,d4,#255
+.L502:
+	or	d0,d15
+.L503:
+	mtcr	#65068,d0
+	isync
+.L504:
+	enable
+.L505:
+	ret
+.L318:
+	
+__vPortSetCCPN_function_end:
+	.size	vPortSetCCPN,__vPortSetCCPN_function_end-vPortSetCCPN
+.L177:
+	; End of function
+	
+	.sdecl	'.text.portmacro.vPortSetICR',code,cluster('vPortSetICR')
+	.sect	'.text.portmacro.vPortSetICR'
+	.align	2
+	
+; Function vPortSetICR
+.L114:
+vPortSetICR:	.type	func
+	disable
+.L510:
+	mtcr	#65068,d4
+	isync
+.L511:
+	enable
+.L512:
+	ret
+.L321:
+	
+__vPortSetICR_function_end:
+	.size	vPortSetICR,__vPortSetICR_function_end-vPortSetICR
+.L182:
+	; End of function
+	
+	.sdecl	'.text.portmacro.xPortSetCCPN',code,cluster('xPortSetCCPN')
+	.sect	'.text.portmacro.xPortSetCCPN'
+	.align	2
+	
+; Function xPortSetCCPN
+.L116:
+xPortSetCCPN:	.type	func
+	disable
+.L517:
+	mfcr	d2,#65068
+.L417:
+	insert	d0,d2,#0,#0,#8
+.L518:
+	and	d15,d4,#255
+.L519:
+	or	d0,d15
+.L520:
+	mtcr	#65068,d0
+	isync
+.L521:
+	enable
+.L522:
+	j	.L2
+.L2:
+	ret
+.L324:
+	
+__xPortSetCCPN_function_end:
+	.size	xPortSetCCPN,__xPortSetCCPN_function_end-xPortSetCCPN
+.L187:
+	; End of function
+	
+	.sdecl	'.text.sys_arch.sys_mutex_new',code,cluster('sys_mutex_new')
+	.sect	'.text.sys_arch.sys_mutex_new'
+	.align	2
+	
+	.global	sys_mutex_new
+; Function sys_mutex_new
+.L118:
+sys_mutex_new:	.type	func
+	sub.a	a10,#16
+.L418:
+	mov.aa	a12,a4
+.L3:
+	jnz.a	a12,.L4
+.L527:
+	movh.a	a15,#@his(.2.str)
+	lea	a15,[a15]@los(.2.str)
+	st.a	[a10],a15
+	mov	d15,#23
+	st.w	[a10]4,d15
+	movh.a	a15,#@his(.3.str)
+	lea	a15,[a15]@los(.3.str)
+	st.a	[a10]8,a15
+	movh.a	a4,#@his(.1.str)
+.L419:
+	lea	a4,[a4]@los(.1.str)
+	call	Ifx_Lwip_printf
+.L4:
+	mov	d4,#1
+	call	xQueueCreateMutex
+.L528:
+	st.a	[a12],a2
+.L529:
+	ld.w	d15,[a12]
+.L530:
+	jne	d15,#0,.L5
+.L531:
+	movh.a	a15,#@his(lwip_stats)
+	lea	a15,[a15]@los(lwip_stats)
+	movh.a	a2,#@his(lwip_stats)
+	lea	a2,[a2]@los(lwip_stats)
+	ld.hu	d15,[a2]238
+	add	d15,#1
+	st.h	[a15]238,d15
+.L532:
+	mov	d2,#-1
+.L533:
+	j	.L6
+.L5:
+.L7:
+	movh.a	a15,#@his(lwip_stats)
+	lea	a15,[a15]@los(lwip_stats)
+	movh.a	a2,#@his(lwip_stats)
+	lea	a2,[a2]@los(lwip_stats)
+	ld.hu	d15,[a2]234
+	add	d15,#1
+	st.h	[a15]234,d15
+	movh.a	a15,#@his(lwip_stats)
+	lea	a15,[a15]@los(lwip_stats)
+	ld.hu	d15,[a15]236
+	movh.a	a15,#@his(lwip_stats)
+	lea	a15,[a15]@los(lwip_stats)
+	ld.hu	d0,[a15]234
+	jge.u	d15,d0,.L8
+	movh.a	a15,#@his(lwip_stats)
+	lea	a15,[a15]@los(lwip_stats)
+	movh.a	a2,#@his(lwip_stats)
+	lea	a2,[a2]@los(lwip_stats)
+	ld.hu	d15,[a2]234
+	st.h	[a15]236,d15
+.L8:
+	mov	d2,#0
+.L534:
+	j	.L9
+.L9:
+.L6:
+	ret
+.L329:
+	
+__sys_mutex_new_function_end:
+	.size	sys_mutex_new,__sys_mutex_new_function_end-sys_mutex_new
+.L192:
+	; End of function
+	
+	.sdecl	'.text.sys_arch.sys_mutex_free',code,cluster('sys_mutex_free')
+	.sect	'.text.sys_arch.sys_mutex_free'
+	.align	2
+	
+	.global	sys_mutex_free
+; Function sys_mutex_free
+.L120:
+sys_mutex_free:	.type	func
+	mov.aa	a15,a4
+.L421:
+	jz.a	a15,.L10
+.L551:
+	ld.w	d15,[a15]
+.L552:
+	jne	d15,#0,.L11
+.L10:
+	j	.L12
+.L11:
+	ld.a	a4,[a15]
+.L420:
+	call	vQueueDelete
+.L553:
+	mov.a	a2,#0
+.L554:
+	st.a	[a15],a2
+.L555:
+	movh.a	a15,#@his(lwip_stats)
+.L422:
+	lea	a15,[a15]@los(lwip_stats)
+	movh.a	a2,#@his(lwip_stats)
+	lea	a2,[a2]@los(lwip_stats)
+	ld.hu	d15,[a2]234
+	add	d15,#-1
+	st.h	[a15]234,d15
+.L12:
+	ret
+.L336:
+	
+__sys_mutex_free_function_end:
+	.size	sys_mutex_free,__sys_mutex_free_function_end-sys_mutex_free
+.L207:
+	; End of function
+	
+	.sdecl	'.text.sys_arch.sys_mutex_lock',code,cluster('sys_mutex_lock')
+	.sect	'.text.sys_arch.sys_mutex_lock'
+	.align	2
+	
+	.global	sys_mutex_lock
+; Function sys_mutex_lock
+.L122:
+sys_mutex_lock:	.type	func
+	sub.a	a10,#16
+.L423:
+	mov.aa	a12,a4
+.L13:
+	jz.a	a12,.L14
+.L539:
+	ld.w	d15,[a12]
+	jne	d15,#0,.L15
+.L14:
+	movh.a	a15,#@his(.2.str)
+	lea	a15,[a15]@los(.2.str)
+	st.a	[a10],a15
+	mov	d15,#50
+	st.w	[a10]4,d15
+	movh.a	a15,#@his(.3.str)
+	lea	a15,[a15]@los(.3.str)
+	st.a	[a10]8,a15
+	movh.a	a4,#@his(.1.str)
+.L424:
+	lea	a4,[a4]@los(.1.str)
+	call	Ifx_Lwip_printf
+.L15:
+	ld.a	a4,[a12]
+	mov	d4,#-1
+	call	xQueueSemaphoreTake
+.L540:
+	ret
+.L332:
+	
+__sys_mutex_lock_function_end:
+	.size	sys_mutex_lock,__sys_mutex_lock_function_end-sys_mutex_lock
+.L197:
+	; End of function
+	
+	.sdecl	'.text.sys_arch.sys_mutex_unlock',code,cluster('sys_mutex_unlock')
+	.sect	'.text.sys_arch.sys_mutex_unlock'
+	.align	2
+	
+	.global	sys_mutex_unlock
+; Function sys_mutex_unlock
+.L124:
+sys_mutex_unlock:	.type	func
+	sub.a	a10,#16
+.L425:
+	mov.aa	a12,a4
+.L16:
+	jz.a	a12,.L17
+.L545:
+	ld.w	d15,[a12]
+	jne	d15,#0,.L18
+.L17:
+	movh.a	a15,#@his(.2.str)
+	lea	a15,[a15]@los(.2.str)
+	st.a	[a10],a15
+	mov	d15,#56
+	st.w	[a10]4,d15
+	movh.a	a15,#@his(.3.str)
+	lea	a15,[a15]@los(.3.str)
+	st.a	[a10]8,a15
+	movh.a	a4,#@his(.1.str)
+.L426:
+	lea	a4,[a4]@los(.1.str)
+	call	Ifx_Lwip_printf
+.L18:
+	ld.a	a4,[a12]
+	mov.a	a5,#0
+	mov	d4,#0
+	mov	d5,#0
+	call	xQueueGenericSend
+.L546:
+	ret
+.L334:
+	
+__sys_mutex_unlock_function_end:
+	.size	sys_mutex_unlock,__sys_mutex_unlock_function_end-sys_mutex_unlock
+.L202:
+	; End of function
+	
+	.sdecl	'.text.sys_arch.sys_mutex_valid',code,cluster('sys_mutex_valid')
+	.sect	'.text.sys_arch.sys_mutex_valid'
+	.align	2
+	
+	.global	sys_mutex_valid
+; Function sys_mutex_valid
+.L126:
+sys_mutex_valid:	.type	func
+	mov	d2,#0
+.L560:
+	jz.a	a4,.L19
+.L561:
+	ld.w	d15,[a4]
+.L562:
+	jeq	d15,#0,.L20
+.L563:
+	mov	d2,#1
+.L20:
+.L19:
+	j	.L21
+.L21:
+	ret
+.L339:
+	
+__sys_mutex_valid_function_end:
+	.size	sys_mutex_valid,__sys_mutex_valid_function_end-sys_mutex_valid
+.L212:
+	; End of function
+	
+	.sdecl	'.text.sys_arch.sys_mutex_set_invalid',code,cluster('sys_mutex_set_invalid')
+	.sect	'.text.sys_arch.sys_mutex_set_invalid'
+	.align	2
+	
+	.global	sys_mutex_set_invalid
+; Function sys_mutex_set_invalid
+.L128:
+sys_mutex_set_invalid:	.type	func
+	jz.a	a4,.L22
+.L568:
+	mov.a	a15,#0
+.L569:
+	st.a	[a4],a15
+.L22:
+	ret
+.L341:
+	
+__sys_mutex_set_invalid_function_end:
+	.size	sys_mutex_set_invalid,__sys_mutex_set_invalid_function_end-sys_mutex_set_invalid
+.L217:
+	; End of function
+	
+	.sdecl	'.text.sys_arch.sys_sem_new',code,cluster('sys_sem_new')
+	.sect	'.text.sys_arch.sys_sem_new'
+	.align	2
+	
+	.global	sys_sem_new
+; Function sys_sem_new
+.L130:
+sys_sem_new:	.type	func
+	sub.a	a10,#16
+.L427:
+	mov.aa	a12,a4
+.L429:
+	mov	d8,d4
+.L23:
+	jnz.a	a12,.L24
+.L574:
+	movh.a	a15,#@his(.4.str)
+	lea	a15,[a15]@los(.4.str)
+	st.a	[a10],a15
+	mov	d15,#78
+	st.w	[a10]4,d15
+	movh.a	a15,#@his(.3.str)
+	lea	a15,[a15]@los(.3.str)
+	st.a	[a10]8,a15
+	movh.a	a4,#@his(.1.str)
+.L428:
+	lea	a4,[a4]@los(.1.str)
+	call	Ifx_Lwip_printf
+.L24:
+	mov	d4,#1
+	mov	d5,#0
+	mov	d6,#3
+	call	xQueueGenericCreate
+.L575:
+	st.a	[a12],a2
+.L576:
+	ld.w	d15,[a12]
+.L577:
+	jne	d15,#0,.L25
+.L578:
+	movh.a	a15,#@his(lwip_stats)
+	lea	a15,[a15]@los(lwip_stats)
+	movh.a	a2,#@his(lwip_stats)
+	lea	a2,[a2]@los(lwip_stats)
+	ld.hu	d15,[a2]232
+	add	d15,#1
+	st.h	[a15]232,d15
+.L579:
+	mov	d2,#-1
+.L580:
+	j	.L26
+.L25:
+	jeq	d8,#0,.L27
+.L581:
+	ld.a	a4,[a12]
+	mov.a	a5,#0
+	mov	d4,#0
+	mov	d5,#0
+	call	xQueueGenericSend
+.L27:
+.L28:
+	movh.a	a15,#@his(lwip_stats)
+	lea	a15,[a15]@los(lwip_stats)
+	movh.a	a2,#@his(lwip_stats)
+	lea	a2,[a2]@los(lwip_stats)
+	ld.hu	d15,[a2]228
+	add	d15,#1
+	st.h	[a15]228,d15
+	movh.a	a15,#@his(lwip_stats)
+	lea	a15,[a15]@los(lwip_stats)
+	ld.hu	d15,[a15]230
+	movh.a	a15,#@his(lwip_stats)
+	lea	a15,[a15]@los(lwip_stats)
+	ld.hu	d0,[a15]228
+	jge.u	d15,d0,.L29
+	movh.a	a15,#@his(lwip_stats)
+	lea	a15,[a15]@los(lwip_stats)
+	movh.a	a2,#@his(lwip_stats)
+	lea	a2,[a2]@los(lwip_stats)
+	ld.hu	d15,[a2]228
+	st.h	[a15]230,d15
+.L29:
+	mov	d2,#0
+.L582:
+	j	.L30
+.L30:
+.L26:
+	ret
+.L343:
+	
+__sys_sem_new_function_end:
+	.size	sys_sem_new,__sys_sem_new_function_end-sys_sem_new
+.L222:
+	; End of function
+	
+	.sdecl	'.text.sys_arch.sys_sem_free',code,cluster('sys_sem_free')
+	.sect	'.text.sys_arch.sys_sem_free'
+	.align	2
+	
+	.global	sys_sem_free
+; Function sys_sem_free
+.L132:
+sys_sem_free:	.type	func
+	mov.aa	a15,a4
+.L431:
+	jz.a	a15,.L31
+.L602:
+	ld.w	d15,[a15]
+.L603:
+	jne	d15,#0,.L32
+.L31:
+	j	.L33
+.L32:
+	ld.a	a4,[a15]
+.L430:
+	call	vQueueDelete
+.L604:
+	mov.a	a2,#0
+.L605:
+	st.a	[a15],a2
+.L606:
+	movh.a	a15,#@his(lwip_stats)
+.L432:
+	lea	a15,[a15]@los(lwip_stats)
+	movh.a	a2,#@his(lwip_stats)
+	lea	a2,[a2]@los(lwip_stats)
+	ld.hu	d15,[a2]228
+	add	d15,#-1
+	st.h	[a15]228,d15
+.L33:
+	ret
+.L357:
+	
+__sys_sem_free_function_end:
+	.size	sys_sem_free,__sys_sem_free_function_end-sys_sem_free
+.L237:
+	; End of function
+	
+	.sdecl	'.text.sys_arch.sys_sem_signal',code,cluster('sys_sem_signal')
+	.sect	'.text.sys_arch.sys_sem_signal'
+	.align	2
+	
+	.global	sys_sem_signal
+; Function sys_sem_signal
+.L134:
+sys_sem_signal:	.type	func
+	sub.a	a10,#16
+.L433:
+	mov.aa	a12,a4
+.L34:
+	jz.a	a12,.L35
+.L587:
+	ld.w	d15,[a12]
+	jne	d15,#0,.L36
+.L35:
+	movh.a	a15,#@his(.4.str)
+	lea	a15,[a15]@los(.4.str)
+	st.a	[a10],a15
+	mov	d15,#110
+	st.w	[a10]4,d15
+	movh.a	a15,#@his(.3.str)
+	lea	a15,[a15]@los(.3.str)
+	st.a	[a10]8,a15
+	movh.a	a4,#@his(.1.str)
+.L434:
+	lea	a4,[a4]@los(.1.str)
+	call	Ifx_Lwip_printf
+.L36:
+	ld.a	a4,[a12]
+	mov.a	a5,#0
+	mov	d4,#0
+	mov	d5,#0
+	call	xQueueGenericSend
+.L588:
+	ret
+.L347:
+	
+__sys_sem_signal_function_end:
+	.size	sys_sem_signal,__sys_sem_signal_function_end-sys_sem_signal
+.L227:
+	; End of function
+	
+	.sdecl	'.text.sys_arch.sys_arch_sem_wait',code,cluster('sys_arch_sem_wait')
+	.sect	'.text.sys_arch.sys_arch_sem_wait'
+	.align	2
+	
+	.global	sys_arch_sem_wait
+; Function sys_arch_sem_wait
+.L136:
+sys_arch_sem_wait:	.type	func
+	sub.a	a10,#16
+.L435:
+	mov.aa	a12,a4
+.L437:
+	mov	d8,d4
+.L37:
+	jz.a	a12,.L38
+.L593:
+	ld.w	d15,[a12]
+	jne	d15,#0,.L39
+.L38:
+	movh.a	a15,#@his(.4.str)
+	lea	a15,[a15]@los(.4.str)
+	st.a	[a10],a15
+	mov	d15,#116
+	st.w	[a10]4,d15
+	movh.a	a15,#@his(.3.str)
+	lea	a15,[a15]@los(.3.str)
+	st.a	[a10]8,a15
+	movh.a	a4,#@his(.1.str)
+.L436:
+	lea	a4,[a4]@los(.1.str)
+	call	Ifx_Lwip_printf
+.L39:
+	call	xTaskGetTickCount
+.L439:
+	mov	d9,d2
+.L441:
+	jne	d8,#0,.L40
+.L594:
+	mov	d4,#-1
+.L442:
+	j	.L41
+.L40:
+	mov	d15,#1000
+	mul	d8,d15
+.L438:
+	mov	d15,#1000
+	div.u	e4,d8,d15
+.L443:
+	jne	d4,#0,.L42
+.L595:
+	mov	d4,#1
+.L42:
+.L41:
+	ld.a	a4,[a12]
+	call	xQueueSemaphoreTake
+.L440:
+	jne	d2,#1,.L43
+.L355:
+	call	xTaskGetTickCount
+.L444:
+	sub	d2,d9
+.L445:
+	mul	d2,d2,#1
+.L596:
+	j	.L44
+.L43:
+	mov	d2,#-1
+.L597:
+	j	.L45
+.L45:
+.L44:
+	ret
+.L350:
+	
+__sys_arch_sem_wait_function_end:
+	.size	sys_arch_sem_wait,__sys_arch_sem_wait_function_end-sys_arch_sem_wait
+.L232:
+	; End of function
+	
+	.sdecl	'.text.sys_arch.sys_sem_valid',code,cluster('sys_sem_valid')
+	.sect	'.text.sys_arch.sys_sem_valid'
+	.align	2
+	
+	.global	sys_sem_valid
+; Function sys_sem_valid
+.L138:
+sys_sem_valid:	.type	func
+	mov	d2,#0
+.L611:
+	jz.a	a4,.L46
+.L612:
+	ld.w	d15,[a4]
+.L613:
+	jeq	d15,#0,.L47
+.L614:
+	mov	d2,#1
+.L47:
+.L46:
+	j	.L48
+.L48:
+	ret
+.L359:
+	
+__sys_sem_valid_function_end:
+	.size	sys_sem_valid,__sys_sem_valid_function_end-sys_sem_valid
+.L242:
+	; End of function
+	
+	.sdecl	'.text.sys_arch.sys_sem_set_invalid',code,cluster('sys_sem_set_invalid')
+	.sect	'.text.sys_arch.sys_sem_set_invalid'
+	.align	2
+	
+	.global	sys_sem_set_invalid
+; Function sys_sem_set_invalid
+.L140:
+sys_sem_set_invalid:	.type	func
+	jz.a	a4,.L49
+.L619:
+	mov.a	a15,#0
+.L620:
+	st.a	[a4],a15
+.L49:
+	ret
+.L361:
+	
+__sys_sem_set_invalid_function_end:
+	.size	sys_sem_set_invalid,__sys_sem_set_invalid_function_end-sys_sem_set_invalid
+.L247:
+	; End of function
+	
+	.sdecl	'.text.sys_arch.sys_mbox_new',code,cluster('sys_mbox_new')
+	.sect	'.text.sys_arch.sys_mbox_new'
+	.align	2
+	
+	.global	sys_mbox_new
+; Function sys_mbox_new
+.L142:
+sys_mbox_new:	.type	func
+	sub.a	a10,#16
+.L446:
+	mov.aa	a12,a4
+.L448:
+	mov	d8,d4
+.L50:
+	jnz.a	a12,.L51
+.L625:
+	movh.a	a15,#@his(.5.str)
+	lea	a15,[a15]@los(.5.str)
+	st.a	[a10],a15
+	mov	d15,#161
+	st.w	[a10]4,d15
+	movh.a	a15,#@his(.3.str)
+	lea	a15,[a15]@los(.3.str)
+	st.a	[a10]8,a15
+	movh.a	a4,#@his(.1.str)
+.L447:
+	lea	a4,[a4]@los(.1.str)
+	call	Ifx_Lwip_printf
+.L51:
+	jge	d8,#1,.L52
+.L626:
+	mov	d8,#1
+.L52:
+	mov	d5,#4
+	mov	d6,#0
+	mov	d4,d8
+.L449:
+	call	xQueueGenericCreate
+.L450:
+	st.a	[a12],a2
+.L627:
+	ld.w	d15,[a12]
+.L628:
+	jne	d15,#0,.L53
+.L629:
+	movh.a	a15,#@his(lwip_stats)
+	lea	a15,[a15]@los(lwip_stats)
+	movh.a	a2,#@his(lwip_stats)
+	lea	a2,[a2]@los(lwip_stats)
+	ld.hu	d15,[a2]244
+	add	d15,#1
+	st.h	[a15]244,d15
+.L630:
+	mov	d2,#-1
+.L631:
+	j	.L54
+.L53:
+.L55:
+	movh.a	a15,#@his(lwip_stats)
+	lea	a15,[a15]@los(lwip_stats)
+	movh.a	a2,#@his(lwip_stats)
+	lea	a2,[a2]@los(lwip_stats)
+	ld.hu	d15,[a2]240
+	add	d15,#1
+	st.h	[a15]240,d15
+	movh.a	a15,#@his(lwip_stats)
+	lea	a15,[a15]@los(lwip_stats)
+	ld.hu	d15,[a15]242
+	movh.a	a15,#@his(lwip_stats)
+	lea	a15,[a15]@los(lwip_stats)
+	ld.hu	d0,[a15]240
+	jge.u	d15,d0,.L56
+	movh.a	a15,#@his(lwip_stats)
+	lea	a15,[a15]@los(lwip_stats)
+	movh.a	a2,#@his(lwip_stats)
+	lea	a2,[a2]@los(lwip_stats)
+	ld.hu	d15,[a2]240
+	st.h	[a15]242,d15
+.L56:
+	mov	d2,#0
+.L632:
+	j	.L57
+.L57:
+.L54:
+	ret
+.L363:
+	
+__sys_mbox_new_function_end:
+	.size	sys_mbox_new,__sys_mbox_new_function_end-sys_mbox_new
+.L252:
+	; End of function
+	
+	.sdecl	'.text.sys_arch.sys_mbox_free',code,cluster('sys_mbox_free')
+	.sect	'.text.sys_arch.sys_mbox_free'
+	.align	2
+	
+	.global	sys_mbox_free
+; Function sys_mbox_free
+.L144:
+sys_mbox_free:	.type	func
+	sub.a	a10,#16
+.L451:
+	mov.aa	a12,a4
+.L453:
+	jz.a	a12,.L58
+.L686:
+	ld.w	d15,[a12]
+.L687:
+	jne	d15,#0,.L59
+.L58:
+	j	.L60
+.L59:
+.L61:
+	ld.a	a4,[a12]
+.L452:
+	call	uxQueueMessagesWaiting
+	jeq	d2,#0,.L62
+	movh.a	a15,#@his(.6.str)
+	lea	a15,[a15]@los(.6.str)
+	st.a	[a10],a15
+	mov	d15,#185
+	st.w	[a10]4,d15
+	movh.a	a15,#@his(.3.str)
+	lea	a15,[a15]@los(.3.str)
+	st.a	[a10]8,a15
+	movh.a	a4,#@his(.1.str)
+	lea	a4,[a4]@los(.1.str)
+	call	Ifx_Lwip_printf
+.L62:
+	ld.a	a4,[a12]
+	call	vQueueDelete
+.L688:
+	mov.a	a15,#0
+.L689:
+	st.a	[a12],a15
+.L690:
+	movh.a	a15,#@his(lwip_stats)
+	lea	a15,[a15]@los(lwip_stats)
+	movh.a	a2,#@his(lwip_stats)
+	lea	a2,[a2]@los(lwip_stats)
+	ld.hu	d15,[a2]240
+	add	d15,#-1
+	st.h	[a15]240,d15
+.L60:
+	ret
+.L394:
+	
+__sys_mbox_free_function_end:
+	.size	sys_mbox_free,__sys_mbox_free_function_end-sys_mbox_free
+.L282:
+	; End of function
+	
+	.sdecl	'.text.sys_arch.sys_mbox_post',code,cluster('sys_mbox_post')
+	.sect	'.text.sys_arch.sys_mbox_post'
+	.align	2
+	
+	.global	sys_mbox_post
+; Function sys_mbox_post
+.L146:
+sys_mbox_post:	.type	func
+	sub.a	a10,#16
+.L454:
+	mov.aa	a12,a4
+.L456:
+	st.a	[a10]12,a5
+.L63:
+	jz.a	a12,.L64
+.L637:
+	ld.w	d15,[a12]
+	jne	d15,#0,.L65
+.L64:
+	movh.a	a15,#@his(.5.str)
+	lea	a15,[a15]@los(.5.str)
+	st.a	[a10],a15
+	mov	d15,#193
+	st.w	[a10]4,d15
+	movh.a	a15,#@his(.3.str)
+	lea	a15,[a15]@los(.3.str)
+	st.a	[a10]8,a15
+	movh.a	a4,#@his(.1.str)
+.L455:
+	lea	a4,[a4]@los(.1.str)
+	call	Ifx_Lwip_printf
+.L65:
+	j	.L66
+.L67:
+.L66:
+	ld.a	a4,[a12]
+	lea	a5,[a10]12
+	mov	d4,#-1
+	mov	d5,#0
+	call	xQueueGenericSend
+.L638:
+	jne	d2,#1,.L67
+.L639:
+	ret
+.L367:
+	
+__sys_mbox_post_function_end:
+	.size	sys_mbox_post,__sys_mbox_post_function_end-sys_mbox_post
+.L257:
+	; End of function
+	
+	.sdecl	'.text.sys_arch.sys_mbox_trypost',code,cluster('sys_mbox_trypost')
+	.sect	'.text.sys_arch.sys_mbox_trypost'
+	.align	2
+	
+	.global	sys_mbox_trypost
+; Function sys_mbox_trypost
+.L148:
+sys_mbox_trypost:	.type	func
+	sub.a	a10,#16
+.L457:
+	mov.aa	a12,a4
+.L459:
+	st.a	[a10]12,a5
+.L68:
+	jz.a	a12,.L69
+.L644:
+	ld.w	d15,[a12]
+	jne	d15,#0,.L70
+.L69:
+	movh.a	a15,#@his(.5.str)
+	lea	a15,[a15]@los(.5.str)
+	st.a	[a10],a15
+	mov	d15,#201
+	st.w	[a10]4,d15
+	movh.a	a15,#@his(.3.str)
+	lea	a15,[a15]@los(.3.str)
+	st.a	[a10]8,a15
+	movh.a	a4,#@his(.1.str)
+.L458:
+	lea	a4,[a4]@los(.1.str)
+	call	Ifx_Lwip_printf
+.L70:
+	ld.a	a4,[a12]
+	lea	a5,[a10]12
+	mov	d4,#0
+	mov	d5,#0
+	call	xQueueGenericSend
+.L645:
+	jne	d2,#1,.L71
+.L646:
+	mov	d2,#0
+.L647:
+	j	.L72
+.L71:
+	movh.a	a15,#@his(lwip_stats)
+	lea	a15,[a15]@los(lwip_stats)
+	movh.a	a2,#@his(lwip_stats)
+	lea	a2,[a2]@los(lwip_stats)
+	ld.hu	d15,[a2]244
+	add	d15,#1
+	st.h	[a15]244,d15
+.L648:
+	mov	d2,#-1
+.L649:
+	j	.L73
+.L73:
+.L72:
+	ret
+.L371:
+	
+__sys_mbox_trypost_function_end:
+	.size	sys_mbox_trypost,__sys_mbox_trypost_function_end-sys_mbox_trypost
+.L262:
+	; End of function
+	
+	.sdecl	'.text.sys_arch.sys_mbox_trypost_fromisr',code,cluster('sys_mbox_trypost_fromisr')
+	.sect	'.text.sys_arch.sys_mbox_trypost_fromisr'
+	.align	2
+	
+	.global	sys_mbox_trypost_fromisr
+; Function sys_mbox_trypost_fromisr
+.L150:
+sys_mbox_trypost_fromisr:	.type	func
+	sub.a	a10,#24
+.L460:
+	mov.aa	a12,a4
+.L462:
+	st.a	[a10]12,a5
+.L654:
+	mov	d15,#0
+.L655:
+	st.w	[a10]16,d15
+.L74:
+	jz.a	a12,.L75
+.L656:
+	ld.w	d15,[a12]
+	jne	d15,#0,.L76
+.L75:
+	movh.a	a15,#@his(.5.str)
+	lea	a15,[a15]@los(.5.str)
+	st.a	[a10],a15
+	mov	d15,#215
+	st.w	[a10]4,d15
+	movh.a	a15,#@his(.3.str)
+	lea	a15,[a15]@los(.3.str)
+	st.a	[a10]8,a15
+	movh.a	a4,#@his(.1.str)
+.L461:
+	lea	a4,[a4]@los(.1.str)
+	call	Ifx_Lwip_printf
+.L76:
+	ld.a	a4,[a12]
+	lea	a5,[a10]12
+	lea	a6,[a10]16
+	mov	d4,#0
+	call	xQueueGenericSendFromISR
+.L657:
+	jne	d2,#1,.L77
+.L378:
+	mov	d0,#0
+	movh.a	a15,#61444
+	ld.w	d15,[a15]@los(0xf0038990)
+	extr.u	d15,d15,#24,#1
+	jeq	d15,#1,.L78
+	ld.w	d15,[a10]16
+	jeq	d15,#0,.L79
+	mov	d0,#1
+.L79:
+.L78:
+	movh.a	a15,#61444
+	ld.w	d15,[a15]@los(0xf0038990)
+	sh	d0,d0,#26
+	or	d15,d0
+	movh.a	a15,#61444
+	st.w	[a15]@los(0xf0038990),d15
+	dsync
+	isync
+.L379:
+	mov	d2,#0
+.L658:
+	j	.L80
+.L77:
+	movh.a	a15,#@his(lwip_stats)
+	lea	a15,[a15]@los(lwip_stats)
+	movh.a	a2,#@his(lwip_stats)
+	lea	a2,[a2]@los(lwip_stats)
+	ld.hu	d15,[a2]244
+	add	d15,#1
+	st.h	[a15]244,d15
+.L659:
+	mov	d2,#-1
+.L660:
+	j	.L81
+.L81:
+.L80:
+	ret
+.L374:
+	
+__sys_mbox_trypost_fromisr_function_end:
+	.size	sys_mbox_trypost_fromisr,__sys_mbox_trypost_fromisr_function_end-sys_mbox_trypost_fromisr
+.L267:
+	; End of function
+	
+	.sdecl	'.text.sys_arch.sys_arch_mbox_fetch',code,cluster('sys_arch_mbox_fetch')
+	.sect	'.text.sys_arch.sys_arch_mbox_fetch'
+	.align	2
+	
+	.global	sys_arch_mbox_fetch
+; Function sys_arch_mbox_fetch
+.L152:
+sys_arch_mbox_fetch:	.type	func
+	sub.a	a10,#16
+.L463:
+	mov.aa	a12,a4
+.L465:
+	mov.aa	a13,a5
+.L466:
+	mov	d8,d4
+.L82:
+	jz.a	a12,.L83
+.L665:
+	ld.w	d15,[a12]
+	jne	d15,#0,.L84
+.L83:
+	movh.a	a15,#@his(.5.str)
+	lea	a15,[a15]@los(.5.str)
+	st.a	[a10],a15
+	mov	d15,#228
+	st.w	[a10]4,d15
+	movh.a	a15,#@his(.3.str)
+	lea	a15,[a15]@los(.3.str)
+	st.a	[a10]8,a15
+	movh.a	a4,#@his(.1.str)
+.L464:
+	lea	a4,[a4]@los(.1.str)
+	call	Ifx_Lwip_printf
+.L84:
+	call	xTaskGetTickCount
+.L468:
+	mov	d9,d2
+.L470:
+	jne	d8,#0,.L85
+.L666:
+	mov	d4,#-1
+.L471:
+	j	.L86
+.L85:
+	mov	d15,#1000
+	mul	d8,d15
+.L467:
+	mov	d15,#1000
+	div.u	e4,d8,d15
+.L472:
+	jne	d4,#0,.L87
+.L667:
+	mov	d4,#1
+.L87:
+.L86:
+	ld.a	a4,[a12]
+.L668:
+	mov.aa	a5,a13
+.L473:
+	call	xQueueReceive
+.L469:
+	jne	d2,#1,.L88
+.L389:
+	call	xTaskGetTickCount
+.L474:
+	sub	d2,d9
+.L475:
+	mul	d2,d2,#1
+.L669:
+	j	.L89
+.L88:
+	jz.a	a13,.L90
+.L670:
+	mov.a	a15,#0
+.L671:
+	st.a	[a13],a15
+.L90:
+	mov	d2,#-1
+.L672:
+	j	.L91
+.L91:
+.L89:
+	ret
+.L382:
+	
+__sys_arch_mbox_fetch_function_end:
+	.size	sys_arch_mbox_fetch,__sys_arch_mbox_fetch_function_end-sys_arch_mbox_fetch
+.L272:
+	; End of function
+	
+	.sdecl	'.text.sys_arch.sys_arch_mbox_tryfetch',code,cluster('sys_arch_mbox_tryfetch')
+	.sect	'.text.sys_arch.sys_arch_mbox_tryfetch'
+	.align	2
+	
+	.global	sys_arch_mbox_tryfetch
+; Function sys_arch_mbox_tryfetch
+.L154:
+sys_arch_mbox_tryfetch:	.type	func
+	sub.a	a10,#16
+.L476:
+	mov.aa	a12,a4
+.L478:
+	mov.aa	a13,a5
+.L92:
+	jz.a	a12,.L93
+.L677:
+	ld.w	d15,[a12]
+	jne	d15,#0,.L94
+.L93:
+	movh.a	a15,#@his(.5.str)
+	lea	a15,[a15]@los(.5.str)
+	st.a	[a10],a15
+	mov	d15,#261
+	st.w	[a10]4,d15
+	movh.a	a15,#@his(.3.str)
+	lea	a15,[a15]@los(.3.str)
+	st.a	[a10]8,a15
+	movh.a	a4,#@his(.1.str)
+.L477:
+	lea	a4,[a4]@los(.1.str)
+	call	Ifx_Lwip_printf
+.L94:
+	ld.a	a4,[a12]
+.L678:
+	mov	d4,#0
+	mov.aa	a5,a13
+.L479:
+	call	xQueueReceive
+.L480:
+	jne	d2,#1,.L95
+.L679:
+	mov	d2,#0
+.L680:
+	j	.L96
+.L95:
+	mov	d2,#-1
+.L681:
+	j	.L97
+.L97:
+.L96:
+	ret
+.L391:
+	
+__sys_arch_mbox_tryfetch_function_end:
+	.size	sys_arch_mbox_tryfetch,__sys_arch_mbox_tryfetch_function_end-sys_arch_mbox_tryfetch
+.L277:
+	; End of function
+	
+	.sdecl	'.text.sys_arch.sys_mbox_valid',code,cluster('sys_mbox_valid')
+	.sect	'.text.sys_arch.sys_mbox_valid'
+	.align	2
+	
+	.global	sys_mbox_valid
+; Function sys_mbox_valid
+.L156:
+sys_mbox_valid:	.type	func
+	mov	d2,#0
+.L695:
+	jz.a	a4,.L98
+.L696:
+	ld.w	d15,[a4]
+.L697:
+	jeq	d15,#0,.L99
+.L698:
+	mov	d2,#1
+.L99:
+.L98:
+	j	.L100
+.L100:
+	ret
+.L396:
+	
+__sys_mbox_valid_function_end:
+	.size	sys_mbox_valid,__sys_mbox_valid_function_end-sys_mbox_valid
+.L287:
+	; End of function
+	
+	.sdecl	'.text.sys_arch.sys_mbox_set_invalid',code,cluster('sys_mbox_set_invalid')
+	.sect	'.text.sys_arch.sys_mbox_set_invalid'
+	.align	2
+	
+	.global	sys_mbox_set_invalid
+; Function sys_mbox_set_invalid
+.L158:
+sys_mbox_set_invalid:	.type	func
+	jz.a	a4,.L101
+.L703:
+	mov.a	a15,#0
+.L704:
+	st.a	[a4],a15
+.L101:
+	ret
+.L398:
+	
+__sys_mbox_set_invalid_function_end:
+	.size	sys_mbox_set_invalid,__sys_mbox_set_invalid_function_end-sys_mbox_set_invalid
+.L292:
+	; End of function
+	
+	.sdecl	'.text.sys_arch.sys_thread_new',code,cluster('sys_thread_new')
+	.sect	'.text.sys_arch.sys_thread_new'
+	.align	2
+	
+	.global	sys_thread_new
+; Function sys_thread_new
+.L160:
+sys_thread_new:	.type	func
+	sub.a	a10,#16
+.L481:
+	mov.aa	a15,a4
+.L486:
+	mov.a	a2,#0
+.L709:
+	st.a	[a10]12,a2
+.L710:
+	jge	d4,#1,.L102
+.L711:
+	mov	d4,#1024
+.L102:
+	mov	d15,#4
+.L712:
+	div.u	e0,d4,d15
+.L488:
+	mov	d15,#256
+.L713:
+	jge.u	d0,d15,.L103
+.L714:
+	mov	d0,#256
+.L103:
+	extr.u	d4,d0,#0,#16
+.L484:
+	lea	a7,[a10]12
+	mov.aa	a4,a5
+.L483:
+	mov.aa	a5,a15
+.L485:
+	call	xTaskCreate
+.L482:
+	jeq	d2,#1,.L104
+.L105:
+	ld.w	d15,[a10]12
+	jne	d15,#0,.L106
+	movh.a	a15,#@his(.7.str)
+.L487:
+	lea	a15,[a15]@los(.7.str)
+	st.a	[a10],a15
+	mov	d15,#309
+	st.w	[a10]4,d15
+	movh.a	a15,#@his(.3.str)
+	lea	a15,[a15]@los(.3.str)
+	st.a	[a10]8,a15
+	movh.a	a4,#@his(.1.str)
+	lea	a4,[a4]@los(.1.str)
+	call	Ifx_Lwip_printf
+.L106:
+	mov.a	a2,#0
+.L715:
+	j	.L107
+.L104:
+	ld.a	a2,[a10]12
+.L716:
+	j	.L108
+.L108:
+.L107:
+	ret
+.L401:
+	
+__sys_thread_new_function_end:
+	.size	sys_thread_new,__sys_thread_new_function_end-sys_thread_new
+.L297:
+	; End of function
+	
+	.sdecl	'.text.sys_arch.sys_arch_protect',code,cluster('sys_arch_protect')
+	.sect	'.text.sys_arch.sys_arch_protect'
+	.align	2
+	
+	.global	sys_arch_protect
+; Function sys_arch_protect
+.L162:
+sys_arch_protect:	.type	func
+	call	vPortEnterCritical
+.L731:
+	mov	d2,#1
+.L732:
+	j	.L109
+.L109:
+	ret
+.L414:
+	
+__sys_arch_protect_function_end:
+	.size	sys_arch_protect,__sys_arch_protect_function_end-sys_arch_protect
+.L312:
+	; End of function
+	
+	.sdecl	'.text.sys_arch.sys_arch_unprotect',code,cluster('sys_arch_unprotect')
+	.sect	'.text.sys_arch.sys_arch_unprotect'
+	.align	2
+	
+	.global	sys_arch_unprotect
+; Function sys_arch_unprotect
+.L164:
+sys_arch_unprotect:	.type	func
+	call	vPortExitCritical
+.L489:
+	ret
+.L415:
+	
+__sys_arch_unprotect_function_end:
+	.size	sys_arch_unprotect,__sys_arch_unprotect_function_end-sys_arch_unprotect
+.L317:
+	; End of function
+	
+	.sdecl	'.text.sys_arch.sys_now',code,cluster('sys_now')
+	.sect	'.text.sys_arch.sys_now'
+	.align	2
+	
+	.global	sys_now
+; Function sys_now
+.L166:
+sys_now:	.type	func
+	call	xTaskGetTickCount
+.L725:
+	mul	d2,d2,#1
+.L726:
+	j	.L110
+.L110:
+	ret
+.L413:
+	
+__sys_now_function_end:
+	.size	sys_now,__sys_now_function_end-sys_now
+.L307:
+	; End of function
+	
+	.sdecl	'.text.sys_arch.sys_init',code,cluster('sys_init')
+	.sect	'.text.sys_arch.sys_init'
+	.align	2
+	
+	.global	sys_init
+; Function sys_init
+.L168:
+sys_init:	.type	func
+	ret
+.L412:
+	
+__sys_init_function_end:
+	.size	sys_init,__sys_init_function_end-sys_init
+.L302:
+	; End of function
+	
+	.sdecl	'.rodata.sys_arch..1.str',data,rom
+	.sect	'.rodata.sys_arch..1.str'
+.1.str:	.type	object
+	.size	.1.str,40
+	.byte	65,115,115,101,114,116,105,111
+	.byte	110,32,34,37,115,34,32,102
+	.byte	97,105,108,101,100,32,97,116
+	.byte	32,108,105,110,101,32,37,100
+	.byte	32,105,110,32
+	.byte	37,115,10
+	.space	1
+	.sdecl	'.rodata.sys_arch..2.str',data,rom
+	.sect	'.rodata.sys_arch..2.str'
+.2.str:	.type	object
+	.size	.2.str,14
+	.byte	109,117,116,101,120,32,33,61
+	.byte	32,78,85,76
+	.byte	76
+	.space	1
+	.sdecl	'.rodata.sys_arch..3.str',data,rom
+	.sect	'.rodata.sys_arch..3.str'
+.3.str:	.type	object
+	.size	.3.str,47
+	.byte	46,46,47,76,105,98,114,97
+	.byte	114,105,101,115,47,69,116,104
+	.byte	101,114,110,101,116,47,108,119
+	.byte	105,112,47,112,111,114,116,47
+	.byte	115,114,99,47,115,121,115,95
+	.byte	97,114,99,104
+	.byte	46,99
+	.space	1
+	.sdecl	'.rodata.sys_arch..4.str',data,rom
+	.sect	'.rodata.sys_arch..4.str'
+.4.str:	.type	object
+	.size	.4.str,12
+	.byte	115,101,109,32,33,61,32,78
+	.byte	85,76,76
+	.space	1
+	.sdecl	'.rodata.sys_arch..5.str',data,rom
+	.sect	'.rodata.sys_arch..5.str'
+.5.str:	.type	object
+	.size	.5.str,13
+	.byte	109,98,111,120,32,33,61,32
+	.byte	78,85,76,76
+	.space	1
+	.sdecl	'.rodata.sys_arch..6.str',data,rom
+	.sect	'.rodata.sys_arch..6.str'
+.6.str:	.type	object
+	.size	.6.str,11
+	.byte	109,98,111,120,32,101,109,112
+	.byte	116,121
+	.space	1
+	.sdecl	'.rodata.sys_arch..7.str',data,rom
+	.sect	'.rodata.sys_arch..7.str'
+.7.str:	.type	object
+	.size	.7.str,35
+	.byte	115,121,115,95,116,104,114,101
+	.byte	97,100,95,110,101,119,58,32
+	.byte	120,84,97,115,107,67,114,101
+	.byte	97,116,101,32,102,97,105,108
+	.byte	101,100
+	.space	1
+	.calls	'sys_mutex_new','Ifx_Lwip_printf'
+	.calls	'sys_mutex_new','xQueueCreateMutex'
+	.calls	'sys_mutex_free','vQueueDelete'
+	.calls	'sys_mutex_lock','Ifx_Lwip_printf'
+	.calls	'sys_mutex_lock','xQueueSemaphoreTake'
+	.calls	'sys_mutex_unlock','Ifx_Lwip_printf'
+	.calls	'sys_mutex_unlock','xQueueGenericSend'
+	.calls	'sys_sem_new','Ifx_Lwip_printf'
+	.calls	'sys_sem_new','xQueueGenericCreate'
+	.calls	'sys_sem_new','xQueueGenericSend'
+	.calls	'sys_sem_free','vQueueDelete'
+	.calls	'sys_sem_signal','Ifx_Lwip_printf'
+	.calls	'sys_sem_signal','xQueueGenericSend'
+	.calls	'sys_arch_sem_wait','Ifx_Lwip_printf'
+	.calls	'sys_arch_sem_wait','xTaskGetTickCount'
+	.calls	'sys_arch_sem_wait','xQueueSemaphoreTake'
+	.calls	'sys_mbox_new','Ifx_Lwip_printf'
+	.calls	'sys_mbox_new','xQueueGenericCreate'
+	.calls	'sys_mbox_free','uxQueueMessagesWaiting'
+	.calls	'sys_mbox_free','Ifx_Lwip_printf'
+	.calls	'sys_mbox_free','vQueueDelete'
+	.calls	'sys_mbox_post','Ifx_Lwip_printf'
+	.calls	'sys_mbox_post','xQueueGenericSend'
+	.calls	'sys_mbox_trypost','Ifx_Lwip_printf'
+	.calls	'sys_mbox_trypost','xQueueGenericSend'
+	.calls	'sys_mbox_trypost_fromisr','Ifx_Lwip_printf'
+	.calls	'sys_mbox_trypost_fromisr','xQueueGenericSendFromISR'
+	.calls	'sys_arch_mbox_fetch','Ifx_Lwip_printf'
+	.calls	'sys_arch_mbox_fetch','xTaskGetTickCount'
+	.calls	'sys_arch_mbox_fetch','xQueueReceive'
+	.calls	'sys_arch_mbox_tryfetch','Ifx_Lwip_printf'
+	.calls	'sys_arch_mbox_tryfetch','xQueueReceive'
+	.calls	'sys_thread_new','xTaskCreate'
+	.calls	'sys_thread_new','Ifx_Lwip_printf'
+	.calls	'sys_arch_protect','vPortEnterCritical'
+	.calls	'sys_arch_unprotect','vPortExitCritical'
+	.calls	'sys_now','xTaskGetTickCount'
+	.calls	'vPortSetCCPN','',0
+	.calls	'vPortSetICR','',0
+	.calls	'xPortSetCCPN','',0
+	.calls	'sys_mutex_new','',16
+	.calls	'sys_mutex_free','',0
+	.calls	'sys_mutex_lock','',16
+	.calls	'sys_mutex_unlock','',16
+	.calls	'sys_mutex_valid','',0
+	.calls	'sys_mutex_set_invalid','',0
+	.calls	'sys_sem_new','',16
+	.calls	'sys_sem_free','',0
+	.calls	'sys_sem_signal','',16
+	.calls	'sys_arch_sem_wait','',16
+	.calls	'sys_sem_valid','',0
+	.calls	'sys_sem_set_invalid','',0
+	.calls	'sys_mbox_new','',16
+	.calls	'sys_mbox_free','',16
+	.calls	'sys_mbox_post','',16
+	.calls	'sys_mbox_trypost','',16
+	.calls	'sys_mbox_trypost_fromisr','',24
+	.calls	'sys_arch_mbox_fetch','',16
+	.calls	'sys_arch_mbox_tryfetch','',16
+	.calls	'sys_mbox_valid','',0
+	.calls	'sys_mbox_set_invalid','',0
+	.calls	'sys_thread_new','',16
+	.calls	'sys_arch_protect','',0
+	.calls	'sys_arch_unprotect','',0
+	.calls	'sys_now','',0
+	.extern	Ifx_Lwip_printf
+	.extern	vPortEnterCritical
+	.extern	vPortExitCritical
+	.extern	xTaskCreate
+	.extern	xTaskGetTickCount
+	.extern	xQueueGenericSend
+	.extern	xQueueReceive
+	.extern	uxQueueMessagesWaiting
+	.extern	vQueueDelete
+	.extern	xQueueGenericSendFromISR
+	.extern	xQueueCreateMutex
+	.extern	xQueueSemaphoreTake
+	.extern	xQueueGenericCreate
+	.extern	lwip_stats
+	.calls	'sys_init','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L170:
+	.word	4174
+	.half	3
+	.word	.L171
+	.byte	4
+.L169:
+	.byte	1
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Documents\\project3\\iLLD_TC375_ADS_FreeRTOS_Basic\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L172
+.L338:
+	.byte	2
+	.byte	'int',0,4,5,3
+	.byte	'__mtcr',0,1,1,1,1,4
+	.word	230
+	.byte	4
+	.word	230
+	.byte	0,5
+	.word	230
+	.byte	6
+	.byte	'__mfcr',0
+	.word	260
+	.byte	1,1,1,1,4
+	.word	230
+	.byte	0,7
+	.byte	'__isync',0,1,1,1,1,7
+	.byte	'__dsync',0,1,1,1,1,7
+	.byte	'__disable',0,1,1,1,1,7
+	.byte	'__enable',0,1,1,1,1
+.L328:
+	.byte	2
+	.byte	'char',0,1,6,2
+	.byte	'char',0,1,6,8
+	.word	350
+.L402:
+	.byte	9
+	.word	358
+	.byte	10
+	.byte	'Ifx_Lwip_printf',0,1,123,6
+	.word	342
+	.byte	1,1,1,1,11
+	.byte	's',0,1,123,34
+	.word	363
+	.byte	12,1,123,37,0,13
+	.byte	'vPortEnterCritical',0,2,102,13,1,1,1,1,13
+	.byte	'vPortExitCritical',0,2,103,13,1,1,1,1
+.L319:
+	.byte	2
+	.byte	'unsigned char',0,1,8
+.L322:
+	.byte	2
+	.byte	'long int',0,4,5
+.L326:
+	.byte	2
+	.byte	'unsigned int',0,4,7,14
+	.byte	'void',0
+.L369:
+	.byte	9
+	.word	509
+	.byte	15,1,1,4
+	.word	515
+	.byte	0,9
+	.word	520
+	.byte	16
+	.byte	'TaskFunction_t',0,4,36,17
+	.word	529
+	.byte	8
+	.word	363
+	.byte	2
+	.byte	'unsigned short int',0,2,7,8
+	.word	562
+	.byte	8
+	.word	515
+.L349:
+	.byte	2
+	.byte	'unsigned long int',0,4,7,17
+	.byte	'tskTaskControlBlock',0,3,86,8,1,9
+	.word	615
+.L409:
+	.byte	16
+	.byte	'TaskHandle_t',0,3,87,38
+	.word	640
+	.byte	9
+	.word	645
+	.byte	8
+	.word	666
+	.byte	10
+	.byte	'xTaskCreate',0,3,227,2,16
+	.word	481
+	.byte	1,1,1,1,11
+	.byte	'pxTaskCode',0,3,227,2,44
+	.word	534
+	.byte	11
+	.byte	'pcName',0,3,228,2,48
+	.word	557
+	.byte	11
+	.byte	'usStackDepth',0,3,229,2,58
+	.word	584
+	.byte	11
+	.byte	'pvParameters',0,3,230,2,42
+	.word	589
+	.byte	11
+	.byte	'uxPriority',0,3,231,2,41
+	.word	594
+	.byte	11
+	.byte	'pxCreatedTask',0,3,232,2,50
+	.word	671
+	.byte	0,9
+	.word	520
+	.byte	9
+	.word	615
+	.byte	18
+	.byte	'xTaskGetTickCount',0,3,163,11,12
+	.word	493
+	.byte	1,1,1,1,17
+	.byte	'QueueDefinition',0,5,50,8,1,9
+	.word	866
+	.byte	16
+	.byte	'QueueHandle_t',0,5,51,36
+	.word	887
+	.byte	8
+	.word	509
+	.byte	9
+	.word	914
+	.byte	8
+	.word	919
+	.byte	8
+	.word	481
+	.byte	10
+	.byte	'xQueueGenericSend',0,5,145,5,12
+	.word	481
+	.byte	1,1,1,1,11
+	.byte	'xQueue',0,5,145,5,45
+	.word	892
+	.byte	11
+	.byte	'pvItemToQueue',0,5,146,5,50
+	.word	924
+	.byte	11
+	.byte	'xTicksToWait',0,5,147,5,42
+	.word	493
+	.byte	11
+	.byte	'xCopyPosition',0,5,148,5,48
+	.word	929
+	.byte	0,9
+	.word	866
+	.byte	8
+	.word	515
+	.byte	10
+	.byte	'xQueueReceive',0,5,244,6,12
+	.word	481
+	.byte	1,1,1,1,11
+	.byte	'xQueue',0,5,244,6,41
+	.word	892
+	.byte	11
+	.byte	'pvBuffer',0,5,245,6,40
+	.word	1055
+	.byte	11
+	.byte	'xTicksToWait',0,5,246,6,38
+	.word	493
+	.byte	0,8
+	.word	892
+	.byte	10
+	.byte	'uxQueueMessagesWaiting',0,5,135,7,13
+	.word	594
+	.byte	1,1,1,1,11
+	.byte	'xQueue',0,5,135,7,57
+	.word	1144
+	.byte	0,19
+	.byte	'vQueueDelete',0,5,170,7,6,1,1,1,1,11
+	.byte	'xQueue',0,5,170,7,34
+	.word	892
+	.byte	0,8
+	.word	919
+	.byte	9
+	.word	481
+	.byte	8
+	.word	1246
+	.byte	8
+	.word	481
+	.byte	10
+	.byte	'xQueueGenericSendFromISR',0,5,171,10,12
+	.word	481
+	.byte	1,1,1,1,11
+	.byte	'xQueue',0,5,171,10,52
+	.word	892
+	.byte	11
+	.byte	'pvItemToQueue',0,5,172,10,57
+	.word	1241
+	.byte	11
+	.byte	'pxHigherPriorityTaskWoken',0,5,173,10,57
+	.word	1251
+	.byte	11
+	.byte	'xCopyPosition',0,5,174,10,55
+	.word	1256
+	.byte	0,8
+	.word	464
+	.byte	10
+	.byte	'xQueueCreateMutex',0,5,176,11,15
+	.word	892
+	.byte	1,1,1,1,11
+	.byte	'ucQueueType',0,5,176,11,48
+	.word	1397
+	.byte	0,10
+	.byte	'xQueueSemaphoreTake',0,5,184,11,12
+	.word	481
+	.byte	1,1,1,1,11
+	.byte	'xQueue',0,5,184,11,47
+	.word	892
+	.byte	11
+	.byte	'xTicksToWait',0,5,185,11,44
+	.word	493
+	.byte	0,8
+	.word	594
+	.byte	8
+	.word	594
+	.byte	8
+	.word	464
+	.byte	10
+	.byte	'xQueueGenericCreate',0,5,141,12,19
+	.word	892
+	.byte	1,1,1,1,11
+	.byte	'uxQueueLength',0,5,141,12,58
+	.word	1527
+	.byte	11
+	.byte	'uxItemSize',0,5,142,12,58
+	.word	1532
+	.byte	11
+	.byte	'ucQueueType',0,5,143,12,54
+	.word	1537
+	.byte	0,16
+	.byte	'SemaphoreHandle_t',0,6,38,23
+	.word	892
+	.byte	16
+	.byte	'sys_mutex_t',0,7,15,29
+	.word	1640
+.L330:
+	.byte	9
+	.word	1666
+	.byte	9
+	.word	866
+	.byte	9
+	.word	866
+	.byte	16
+	.byte	'sys_sem_t',0,7,14,29
+	.word	1640
+.L344:
+	.byte	9
+	.word	1701
+	.byte	9
+	.word	866
+	.byte	16
+	.byte	'sys_mbox_t',0,7,13,29
+	.word	892
+.L364:
+	.byte	9
+	.word	1729
+	.byte	9
+	.word	866
+.L380:
+	.byte	8
+	.word	493
+.L384:
+	.byte	9
+	.word	515
+	.byte	9
+	.word	615
+.L400:
+	.byte	16
+	.byte	'sys_thread_t',0,7,16,29
+	.word	645
+	.byte	9
+	.word	520
+.L404:
+	.byte	16
+	.byte	'lwip_thread_fn',0,8,98,16
+	.word	529
+	.byte	2
+	.byte	'short int',0,2,5,16
+	.byte	'__wchar_t',0,9,1,1
+	.word	1822
+	.byte	16
+	.byte	'__size_t',0,9,1,1
+	.word	493
+	.byte	16
+	.byte	'__ptrdiff_t',0,9,1,1
+	.word	230
+	.byte	20,1,9
+	.word	1890
+	.byte	16
+	.byte	'__codeptr',0,9,1,1
+	.word	1892
+	.byte	16
+	.byte	'__intptr_t',0,9,1,1
+	.word	230
+	.byte	16
+	.byte	'__uintptr_t',0,9,1,1
+	.word	493
+	.byte	16
+	.byte	'size_t',0,10,24,25
+	.word	493
+	.byte	16
+	.byte	'uint8',0,11,108,29
+	.word	464
+	.byte	16
+	.byte	'uint16',0,11,112,29
+	.word	562
+	.byte	16
+	.byte	'uint32',0,11,116,29
+	.word	594
+	.byte	16
+	.byte	'sint8',0,11,125,29
+	.word	342
+	.byte	16
+	.byte	'sint16',0,11,129,1,29
+	.word	1822
+	.byte	16
+	.byte	'sint32',0,11,134,1,29
+	.word	481
+	.byte	2
+	.byte	'long long int',0,8,5,16
+	.byte	'sint64',0,11,141,1,29
+	.word	2059
+	.byte	2
+	.byte	'float',0,4,4,16
+	.byte	'float32',0,11,170,1,29
+	.word	2092
+	.byte	16
+	.byte	'pvoid',0,12,54,28
+	.word	515
+	.byte	16
+	.byte	'Ifx_TickTime',0,12,76,28
+	.word	2059
+	.byte	16
+	.byte	'u8_t',0,1,85,16
+	.word	464
+	.byte	16
+	.byte	'u16_t',0,1,86,16
+	.word	562
+	.byte	16
+	.byte	'u32_t',0,1,87,16
+	.word	594
+	.byte	16
+	.byte	's8_t',0,1,88,16
+	.word	342
+	.byte	16
+	.byte	'uint8_t',0,13,242,1,41
+	.word	464
+	.byte	16
+	.byte	'uint16_t',0,13,246,1,41
+	.word	562
+	.byte	16
+	.byte	'uint32_t',0,13,254,1,41
+	.word	493
+	.byte	16
+	.byte	'intmax_t',0,13,198,2,41
+	.word	2059
+	.byte	16
+	.byte	'err_t',0,14,96,14
+	.word	342
+	.byte	16
+	.byte	'StackType_t',0,2,74,30
+	.word	493
+	.byte	16
+	.byte	'BaseType_t',0,2,75,30
+	.word	481
+	.byte	16
+	.byte	'UBaseType_t',0,2,76,30
+	.word	594
+	.byte	16
+	.byte	'TickType_t',0,2,82,30
+	.word	493
+	.byte	21,16
+	.word	515
+	.byte	22,3,0,23
+	.byte	'xSTATIC_LIST_ITEM',0,15,177,9,8,20,24
+	.byte	'xDummy2',0
+	.word	493
+	.byte	4,2,35,0,24
+	.byte	'pvDummy3',0
+	.word	2370
+	.byte	16,2,35,4,0,16
+	.byte	'StaticListItem_t',0,15,188,9,34
+	.word	2379
+	.byte	21,8
+	.word	515
+	.byte	22,1,0,23
+	.byte	'xSTATIC_MINI_LIST_ITEM',0,15,192,9,12,12,24
+	.byte	'xDummy2',0
+	.word	493
+	.byte	4,2,35,0,24
+	.byte	'pvDummy3',0
+	.word	2465
+	.byte	8,2,35,4,0,16
+	.byte	'StaticMiniListItem_t',0,15,200,9,43
+	.word	2474
+	.byte	23
+	.byte	'xSTATIC_LIST',0,15,206,9,16,20,24
+	.byte	'uxDummy2',0
+	.word	594
+	.byte	4,2,35,0,24
+	.byte	'pvDummy3',0
+	.word	515
+	.byte	4,2,35,4,24
+	.byte	'xDummy4',0
+	.word	2474
+	.byte	12,2,35,8,0,16
+	.byte	'StaticList_t',0,15,217,9,3
+	.word	2569
+	.byte	21,12
+	.word	515
+	.byte	22,2,0,25,15,172,10,5,4,24
+	.byte	'pvDummy2',0
+	.word	515
+	.byte	4,2,35,0,24
+	.byte	'uxDummy2',0
+	.word	594
+	.byte	4,2,35,0,0,21,40
+	.word	2569
+	.byte	22,1,0,21,12
+	.word	594
+	.byte	22,2,0,21,2
+	.word	464
+	.byte	22,1,0,23
+	.byte	'xSTATIC_QUEUE',0,15,168,10,16,72,24
+	.byte	'pvDummy1',0
+	.word	2664
+	.byte	12,2,35,0,24
+	.byte	'u',0
+	.word	2673
+	.byte	4,2,35,12,24
+	.byte	'xDummy3',0
+	.word	2716
+	.byte	40,2,35,16,24
+	.byte	'uxDummy4',0
+	.word	2725
+	.byte	12,2,35,56,24
+	.byte	'ucDummy5',0
+	.word	2734
+	.byte	2,2,35,68,0,16
+	.byte	'StaticQueue_t',0,15,194,10,3
+	.word	2743
+	.byte	21,16
+	.word	493
+	.byte	22,3,0,23
+	.byte	'xSTATIC_STREAM_BUFFER',0,15,138,11,16,32,24
+	.byte	'uxDummy1',0
+	.word	2869
+	.byte	16,2,35,0,24
+	.byte	'pvDummy2',0
+	.word	2664
+	.byte	12,2,35,16,24
+	.byte	'ucDummy3',0
+	.word	464
+	.byte	1,2,35,28,0,16
+	.byte	'StaticStreamBuffer_t',0,15,149,11,3
+	.word	2878
+	.byte	9
+	.word	.L490-.L170
+	.byte	5
+	.word	594
+	.byte	9
+	.word	.L490-.L170
+	.byte	23
+	.byte	'xMINI_LIST_ITEM',0,16,157,1,12,12,24
+	.byte	'xItemValue',0
+	.word	493
+	.byte	4,2,35,0,24
+	.byte	'pxNext',0
+	.word	2991
+	.byte	4,2,35,4,24
+	.byte	'pxPrevious',0
+	.word	2991
+	.byte	4,2,35,8,0,23
+	.byte	'xLIST',0,16,172,1,16,20,24
+	.byte	'uxNumberOfItems',0
+	.word	2996
+	.byte	4,2,35,0,24
+	.byte	'pxIndex',0
+	.word	3001
+	.byte	4,2,35,4,24
+	.byte	'xListEnd',0
+	.word	3006
+	.byte	12,2,35,8,0,9
+	.word	3085
+.L490:
+	.byte	23
+	.byte	'xLIST_ITEM',0,16,144,1,8,20,24
+	.byte	'xItemValue',0
+	.word	493
+	.byte	4,2,35,0,24
+	.byte	'pxNext',0
+	.word	2991
+	.byte	4,2,35,4,24
+	.byte	'pxPrevious',0
+	.word	2991
+	.byte	4,2,35,8,24
+	.byte	'pvOwner',0
+	.word	515
+	.byte	4,2,35,12,24
+	.byte	'pxContainer',0
+	.word	3158
+	.byte	4,2,35,16,0,16
+	.byte	'ListItem_t',0,16,154,1,27
+	.word	3163
+	.byte	16
+	.byte	'MiniListItem_t',0,16,164,1,36
+	.word	3006
+	.byte	26,3,96,9,1,27
+	.byte	'eRunning',0,0,27
+	.byte	'eReady',0,1,27
+	.byte	'eBlocked',0,2,27
+	.byte	'eSuspended',0,3,27
+	.byte	'eDeleted',0,4,27
+	.byte	'eInvalid',0,5,0,16
+	.byte	'eTaskState',0,3,104,3
+	.word	3319
+	.byte	23
+	.byte	'xMEMORY_REGION',0,3,128,1,16,12,24
+	.byte	'pvBaseAddress',0
+	.word	515
+	.byte	4,2,35,0,24
+	.byte	'ulLengthInBytes',0
+	.word	493
+	.byte	4,2,35,4,24
+	.byte	'ulParameters',0
+	.word	493
+	.byte	4,2,35,8,0,16
+	.byte	'MemoryRegion_t',0,3,133,1,3
+	.word	3410
+	.byte	16
+	.byte	'sys_prot_t',0,7,17,29
+	.word	594
+	.byte	16
+	.byte	'mem_size_t',0,17,67,15
+	.word	562
+	.byte	23
+	.byte	'stats_proto',0,18,64,8,24,24
+	.byte	'xmit',0
+	.word	562
+	.byte	2,2,35,0,24
+	.byte	'recv',0
+	.word	562
+	.byte	2,2,35,2,24
+	.byte	'fw',0
+	.word	562
+	.byte	2,2,35,4,24
+	.byte	'drop',0
+	.word	562
+	.byte	2,2,35,6,24
+	.byte	'chkerr',0
+	.word	562
+	.byte	2,2,35,8,24
+	.byte	'lenerr',0
+	.word	562
+	.byte	2,2,35,10,24
+	.byte	'memerr',0
+	.word	562
+	.byte	2,2,35,12,24
+	.byte	'rterr',0
+	.word	562
+	.byte	2,2,35,14,24
+	.byte	'proterr',0
+	.word	562
+	.byte	2,2,35,16,24
+	.byte	'opterr',0
+	.word	562
+	.byte	2,2,35,18,24
+	.byte	'err',0
+	.word	562
+	.byte	2,2,35,20,24
+	.byte	'cachehit',0
+	.word	562
+	.byte	2,2,35,22,0,23
+	.byte	'stats_mem',0,18,98,8,16,24
+	.byte	'name',0
+	.word	363
+	.byte	4,2,35,0,24
+	.byte	'err',0
+	.word	562
+	.byte	2,2,35,4,24
+	.byte	'avail',0
+	.word	562
+	.byte	2,2,35,6,24
+	.byte	'used',0
+	.word	562
+	.byte	2,2,35,8,24
+	.byte	'max',0
+	.word	562
+	.byte	2,2,35,10,24
+	.byte	'illegal',0
+	.word	562
+	.byte	2,2,35,12,0,9
+	.word	3763
+	.byte	21,44
+	.word	3865
+	.byte	22,10,0,23
+	.byte	'stats_syselem',0,18,110,8,6,24
+	.byte	'used',0
+	.word	562
+	.byte	2,2,35,0,24
+	.byte	'max',0
+	.word	562
+	.byte	2,2,35,2,24
+	.byte	'err',0
+	.word	562
+	.byte	2,2,35,4,0,23
+	.byte	'stats_sys',0,18,117,8,20,24
+	.byte	'sem',0
+	.word	3879
+	.byte	6,2,35,0,24
+	.byte	'mutex',0
+	.word	3879
+	.byte	6,2,35,6,24
+	.byte	'mbox',0
+	.word	3879
+	.byte	6,2,35,12,0,23
+	.byte	'stats_',0,18,232,1,8,248,1,24
+	.byte	'link',0
+	.word	3564
+	.byte	24,2,35,0,24
+	.byte	'etharp',0
+	.word	3564
+	.byte	24,2,35,24,24
+	.byte	'ip_frag',0
+	.word	3564
+	.byte	24,2,35,48,24
+	.byte	'ip',0
+	.word	3564
+	.byte	24,2,35,72,24
+	.byte	'icmp',0
+	.word	3564
+	.byte	24,2,35,96,24
+	.byte	'udp',0
+	.word	3564
+	.byte	24,2,35,120,24
+	.byte	'tcp',0
+	.word	3564
+	.byte	24,3,35,144,1,24
+	.byte	'mem',0
+	.word	3763
+	.byte	16,3,35,168,1,24
+	.byte	'memp',0
+	.word	3870
+	.byte	44,3,35,184,1,24
+	.byte	'sys',0
+	.word	3939
+	.byte	20,3,35,228,1,0,28
+	.byte	'lwip_stats',0,18,176,2,22
+	.word	3997
+	.byte	1,1,0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L171:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,46,1,3,8,54,15,39,12,63,12
+	.byte	60,12,0,0,4,5,0,73,19,0,0,5,53,0,73,19,0,0,6,46,1,3,8,73,19,54,15,39,12,63,12,60,12,0,0,7,46,0,3,8,54
+	.byte	15,39,12,63,12,60,12,0,0,8,38,0,73,19,0,0,9,15,0,73,19,0,0,10,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39
+	.byte	12,63,12,60,12,0,0,11,5,0,3,8,58,15,59,15,57,15,73,19,0,0,12,24,0,58,15,59,15,57,15,0,0,13,46,0,3,8,58
+	.byte	15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,14,59,0,3,8,0,0,15,21,1,54,15,39,12,0,0,16,22,0,3,8,58,15,59
+	.byte	15,57,15,73,19,0,0,17,19,0,3,8,58,15,59,15,57,15,60,12,0,0,18,46,0,3,8,58,15,59,15,57,15,73,19,54,15,39
+	.byte	12,63,12,60,12,0,0,19,46,1,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,20,21,0,54,15,0,0,21,1,1
+	.byte	11,15,73,19,0,0,22,33,0,47,15,0,0,23,19,1,3,8,58,15,59,15,57,15,11,15,0,0,24,13,0,3,8,73,19,11,15,56,9
+	.byte	0,0,25,23,1,58,15,59,15,57,15,11,15,0,0,26,4,1,58,15,59,15,57,15,11,15,0,0,27,40,0,3,8,28,13,0,0,28,52
+	.byte	0,3,8,58,15,59,15,57,15,73,19,63,12,60,12,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L172:
+	.word	.L492-.L491
+.L491:
+	.half	3
+	.word	.L494-.L493
+.L493:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'C:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\OS\\\\FreeRTOS\\\\portable\\\\Tasking\\\\TC3',0
+	.byte	'C:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\OS\\\\FreeRTOS\\\\include',0
+	.byte	'C:\\Infineon\\AURIX-Studio-1.10.16\\tools\\Compilers\\Tasking_1.1r8\\ctc\\include\\',0,0
+	.byte	'C:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Ethernet\\\\lwip\\\\port\\\\include\\arch\\cc.h',0
+	.byte	0,0,0
+	.byte	'portmacro.h',0,1,0,0
+	.byte	'task.h',0,2,0,0
+	.byte	'projdefs.h',0,2,0,0
+	.byte	'queue.h',0,2,0,0
+	.byte	'semphr.h',0,2,0,0
+	.byte	'C:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Ethernet\\\\lwip\\\\port\\\\include\\arch\\sys_arch.h',0
+	.byte	0,0,0
+	.byte	'C:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Ethernet\\\\lwip\\\\src\\\\include\\lwip\\sys.h',0
+	.byte	0,0,0
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0,0,0,0
+	.byte	'stddef.h',0,3,0,0
+	.byte	'C:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Cpu\\Std\\Platform_Types.h',0
+	.byte	0,0,0
+	.byte	'C:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\iLLD\\\\TC37A\\\\Tricore\\Cpu\\Std\\Ifx_Types.h',0
+	.byte	0,0,0
+	.byte	'stdint.h',0,3,0,0
+	.byte	'C:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Ethernet\\\\lwip\\\\src\\\\include\\lwip\\err.h',0
+	.byte	0,0,0
+	.byte	'FreeRTOS.h',0,2,0,0
+	.byte	'list.h',0,2,0,0
+	.byte	'C:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Ethernet\\\\lwip\\\\src\\\\include\\lwip\\mem.h',0
+	.byte	0,0,0
+	.byte	'C:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\Libraries\\\\Ethernet\\\\lwip\\\\src\\\\include\\lwip\\stats.h',0
+	.byte	0,0,0,0
+.L494:
+.L492:
+	.sdecl	'.debug_info',debug,cluster('vPortSetCCPN')
+	.sect	'.debug_info'
+.L173:
+	.word	369
+	.half	3
+	.word	.L174
+	.byte	4,1
+	.byte	'C:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\OS\\\\FreeRTOS\\\\portable\\\\Tasking\\\\TC3\\portmacro.h',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Documents\\project3\\iLLD_TC375_ADS_FreeRTOS_Basic\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L176,.L175
+	.byte	2
+	.word	.L169
+	.byte	3
+	.byte	'vPortSetCCPN',0,1,160,1,54,1,1
+	.word	.L112,.L318,.L111
+	.byte	4
+	.byte	'ucCCPN',0,1,160,1,82
+	.word	.L319,.L320
+	.byte	5
+	.word	.L112,.L318
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('vPortSetCCPN')
+	.sect	'.debug_abbrev'
+.L174:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('vPortSetCCPN')
+	.sect	'.debug_line'
+.L175:
+	.word	.L496-.L495
+.L495:
+	.half	3
+	.word	.L498-.L497
+.L497:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'C:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\OS\\\\FreeRTOS\\\\portable\\\\Tasking\\\\TC3',0
+	.byte	0
+	.byte	'portmacro.h',0,1,0,0,0
+.L498:
+	.byte	5,14,7,0,5,2
+	.word	.L112
+	.byte	3,161,1,1,5,34,9
+	.half	.L499-.L112
+	.byte	3,1,1,5,50,9
+	.half	.L500-.L499
+	.byte	1,5,87,9
+	.half	.L501-.L500
+	.byte	1,5,76,9
+	.half	.L502-.L501
+	.byte	1,5,11,9
+	.half	.L503-.L502
+	.byte	1,5,13,9
+	.half	.L504-.L503
+	.byte	3,1,1,5,1,9
+	.half	.L505-.L504
+	.byte	3,1,1,7,9
+	.half	.L177-.L505
+	.byte	0,1,1
+.L496:
+	.sdecl	'.debug_ranges',debug,cluster('vPortSetCCPN')
+	.sect	'.debug_ranges'
+.L176:
+	.word	-1,.L112,0,.L177-.L112,0,0
+	.sdecl	'.debug_info',debug,cluster('vPortSetICR')
+	.sect	'.debug_info'
+.L178:
+	.word	367
+	.half	3
+	.word	.L179
+	.byte	4,1
+	.byte	'C:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\OS\\\\FreeRTOS\\\\portable\\\\Tasking\\\\TC3\\portmacro.h',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Documents\\project3\\iLLD_TC375_ADS_FreeRTOS_Basic\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L181,.L180
+	.byte	2
+	.word	.L169
+	.byte	3
+	.byte	'vPortSetICR',0,1,167,1,54,1,1
+	.word	.L114,.L321,.L113
+	.byte	4
+	.byte	'ulICR',0,1,167,1,81
+	.word	.L322,.L323
+	.byte	5
+	.word	.L114,.L321
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('vPortSetICR')
+	.sect	'.debug_abbrev'
+.L179:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('vPortSetICR')
+	.sect	'.debug_line'
+.L180:
+	.word	.L507-.L506
+.L506:
+	.half	3
+	.word	.L509-.L508
+.L508:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'C:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\OS\\\\FreeRTOS\\\\portable\\\\Tasking\\\\TC3',0
+	.byte	0
+	.byte	'portmacro.h',0,1,0,0,0
+.L509:
+	.byte	5,14,7,0,5,2
+	.word	.L114
+	.byte	3,168,1,1,5,11,9
+	.half	.L510-.L114
+	.byte	3,1,1,5,13,9
+	.half	.L511-.L510
+	.byte	3,1,1,5,1,9
+	.half	.L512-.L511
+	.byte	3,1,1,7,9
+	.half	.L182-.L512
+	.byte	0,1,1
+.L507:
+	.sdecl	'.debug_ranges',debug,cluster('vPortSetICR')
+	.sect	'.debug_ranges'
+.L181:
+	.word	-1,.L114,0,.L182-.L114,0,0
+	.sdecl	'.debug_info',debug,cluster('xPortSetCCPN')
+	.sect	'.debug_info'
+.L183:
+	.word	392
+	.half	3
+	.word	.L184
+	.byte	4,1
+	.byte	'C:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\OS\\\\FreeRTOS\\\\portable\\\\Tasking\\\\TC3\\portmacro.h',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Documents\\project3\\iLLD_TC375_ADS_FreeRTOS_Basic\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L186,.L185
+	.byte	2
+	.word	.L169
+	.byte	3
+	.byte	'xPortSetCCPN',0,1,174,1,63
+	.word	.L322
+	.byte	1,1
+	.word	.L116,.L324,.L115
+	.byte	4
+	.byte	'ucCCPN',0,1,174,1,91
+	.word	.L319,.L325
+	.byte	5
+	.word	.L116,.L324
+	.byte	6
+	.byte	'xICR',0,1,176,1,14
+	.word	.L326,.L327
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('xPortSetCCPN')
+	.sect	'.debug_abbrev'
+.L184:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('xPortSetCCPN')
+	.sect	'.debug_line'
+.L185:
+	.word	.L514-.L513
+.L513:
+	.half	3
+	.word	.L516-.L515
+.L515:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'C:\\\\Users\\\\USER\\\\Documents\\\\project3\\\\iLLD_TC375_ADS_FreeRTOS_Basic\\\\OS\\\\FreeRTOS\\\\portable\\\\Tasking\\\\TC3',0
+	.byte	0
+	.byte	'portmacro.h',0,1,0,0,0
+.L516:
+	.byte	5,14,7,0,5,2
+	.word	.L116
+	.byte	3,177,1,1,5,18,9
+	.half	.L517-.L116
+	.byte	3,1,1,5,33,9
+	.half	.L417-.L517
+	.byte	3,1,1,5,70,9
+	.half	.L518-.L417
+	.byte	1,5,59,9
+	.half	.L519-.L518
+	.byte	1,5,11,9
+	.half	.L520-.L519
+	.byte	1,5,13,9
+	.half	.L521-.L520
+	.byte	3,1,1,5,5,9
+	.half	.L522-.L521
+	.byte	3,1,1,5,1,9
+	.half	.L2-.L522
+	.byte	3,1,1,7,9
+	.half	.L187-.L2
+	.byte	0,1,1
+.L514:
+	.sdecl	'.debug_ranges',debug,cluster('xPortSetCCPN')
+	.sect	'.debug_ranges'
+.L186:
+	.word	-1,.L116,0,.L187-.L116,0,0
+	.sdecl	'.debug_info',debug,cluster('sys_mutex_new')
+	.sect	'.debug_info'
+.L188:
+	.word	301
+	.half	3
+	.word	.L189
+	.byte	4,1
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Documents\\project3\\iLLD_TC375_ADS_FreeRTOS_Basic\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L191,.L190
+	.byte	2
+	.word	.L169
+	.byte	3
+	.byte	'sys_mutex_new',0,1,21,7
+	.word	.L328
+	.byte	1,1,1
+	.word	.L118,.L329,.L117
+	.byte	4
+	.byte	'mutex',0,1,21,34
+	.word	.L330,.L331
+	.byte	5
+	.word	.L118,.L329
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_mutex_new')
+	.sect	'.debug_abbrev'
+.L189:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_mutex_new')
+	.sect	'.debug_line'
+.L190:
+	.word	.L524-.L523
+.L523:
+	.half	3
+	.word	.L526-.L525
+.L525:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0,0,0,0,0
+.L526:
+	.byte	5,7,7,0,5,2
+	.word	.L118
+	.byte	3,20,1,5,5,9
+	.half	.L3-.L118
+	.byte	3,2,1,7,9
+	.half	.L527-.L3
+	.byte	1,5,14,9
+	.half	.L4-.L527
+	.byte	3,2,1,5,12,9
+	.half	.L528-.L4
+	.byte	1,5,9,9
+	.half	.L529-.L528
+	.byte	3,1,1,5,5,9
+	.half	.L530-.L529
+	.byte	1,5,9,7,9
+	.half	.L531-.L530
+	.byte	3,2,1,5,16,9
+	.half	.L532-.L531
+	.byte	3,1,1,5,9,9
+	.half	.L533-.L532
+	.byte	1,5,5,9
+	.half	.L7-.L533
+	.byte	3,3,1,5,12,9
+	.half	.L8-.L7
+	.byte	3,1,1,5,5,9
+	.half	.L534-.L8
+	.byte	1,5,1,9
+	.half	.L6-.L534
+	.byte	3,1,1,7,9
+	.half	.L192-.L6
+	.byte	0,1,1
+.L524:
+	.sdecl	'.debug_ranges',debug,cluster('sys_mutex_new')
+	.sect	'.debug_ranges'
+.L191:
+	.word	-1,.L118,0,.L192-.L118,0,0
+	.sdecl	'.debug_info',debug,cluster('sys_mutex_lock')
+	.sect	'.debug_info'
+.L193:
+	.word	298
+	.half	3
+	.word	.L194
+	.byte	4,1
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Documents\\project3\\iLLD_TC375_ADS_FreeRTOS_Basic\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L196,.L195
+	.byte	2
+	.word	.L169
+	.byte	3
+	.byte	'sys_mutex_lock',0,1,48,6,1,1,1
+	.word	.L122,.L332,.L121
+	.byte	4
+	.byte	'mutex',0,1,48,34
+	.word	.L330,.L333
+	.byte	5
+	.word	.L122,.L332
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_mutex_lock')
+	.sect	'.debug_abbrev'
+.L194:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_mutex_lock')
+	.sect	'.debug_line'
+.L195:
+	.word	.L536-.L535
+.L535:
+	.half	3
+	.word	.L538-.L537
+.L537:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0,0,0,0,0
+.L538:
+	.byte	5,6,7,0,5,2
+	.word	.L122
+	.byte	3,47,1,5,5,9
+	.half	.L13-.L122
+	.byte	3,2,1,7,9
+	.half	.L539-.L13
+	.byte	1,5,11,9
+	.half	.L15-.L539
+	.byte	3,1,1,5,1,9
+	.half	.L540-.L15
+	.byte	3,1,1,7,9
+	.half	.L197-.L540
+	.byte	0,1,1
+.L536:
+	.sdecl	'.debug_ranges',debug,cluster('sys_mutex_lock')
+	.sect	'.debug_ranges'
+.L196:
+	.word	-1,.L122,0,.L197-.L122,0,0
+	.sdecl	'.debug_info',debug,cluster('sys_mutex_unlock')
+	.sect	'.debug_info'
+.L198:
+	.word	300
+	.half	3
+	.word	.L199
+	.byte	4,1
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Documents\\project3\\iLLD_TC375_ADS_FreeRTOS_Basic\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L201,.L200
+	.byte	2
+	.word	.L169
+	.byte	3
+	.byte	'sys_mutex_unlock',0,1,54,6,1,1,1
+	.word	.L124,.L334,.L123
+	.byte	4
+	.byte	'mutex',0,1,54,36
+	.word	.L330,.L335
+	.byte	5
+	.word	.L124,.L334
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_mutex_unlock')
+	.sect	'.debug_abbrev'
+.L199:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_mutex_unlock')
+	.sect	'.debug_line'
+.L200:
+	.word	.L542-.L541
+.L541:
+	.half	3
+	.word	.L544-.L543
+.L543:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0,0,0,0,0
+.L544:
+	.byte	5,6,7,0,5,2
+	.word	.L124
+	.byte	3,53,1,5,5,9
+	.half	.L16-.L124
+	.byte	3,2,1,7,9
+	.half	.L545-.L16
+	.byte	1,9
+	.half	.L18-.L545
+	.byte	3,1,1,5,1,9
+	.half	.L546-.L18
+	.byte	3,1,1,7,9
+	.half	.L202-.L546
+	.byte	0,1,1
+.L542:
+	.sdecl	'.debug_ranges',debug,cluster('sys_mutex_unlock')
+	.sect	'.debug_ranges'
+.L201:
+	.word	-1,.L124,0,.L202-.L124,0,0
+	.sdecl	'.debug_info',debug,cluster('sys_mutex_free')
+	.sect	'.debug_info'
+.L203:
+	.word	298
+	.half	3
+	.word	.L204
+	.byte	4,1
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Documents\\project3\\iLLD_TC375_ADS_FreeRTOS_Basic\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L206,.L205
+	.byte	2
+	.word	.L169
+	.byte	3
+	.byte	'sys_mutex_free',0,1,36,6,1,1,1
+	.word	.L120,.L336,.L119
+	.byte	4
+	.byte	'mutex',0,1,36,34
+	.word	.L330,.L337
+	.byte	5
+	.word	.L120,.L336
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_mutex_free')
+	.sect	'.debug_abbrev'
+.L204:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_mutex_free')
+	.sect	'.debug_line'
+.L205:
+	.word	.L548-.L547
+.L547:
+	.half	3
+	.word	.L550-.L549
+.L549:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0,0,0,0,0
+.L550:
+	.byte	5,6,7,0,5,2
+	.word	.L120
+	.byte	3,35,1,5,9,9
+	.half	.L421-.L120
+	.byte	3,2,1,5,29,7,9
+	.half	.L551-.L421
+	.byte	1,5,36,9
+	.half	.L552-.L551
+	.byte	1,5,9,7,9
+	.half	.L10-.L552
+	.byte	3,2,1,5,5,9
+	.half	.L11-.L10
+	.byte	3,3,1,5,14,9
+	.half	.L553-.L11
+	.byte	3,1,1,5,12,9
+	.half	.L554-.L553
+	.byte	1,5,5,9
+	.half	.L555-.L554
+	.byte	3,1,1,5,1,9
+	.half	.L12-.L555
+	.byte	3,1,1,7,9
+	.half	.L207-.L12
+	.byte	0,1,1
+.L548:
+	.sdecl	'.debug_ranges',debug,cluster('sys_mutex_free')
+	.sect	'.debug_ranges'
+.L206:
+	.word	-1,.L120,0,.L207-.L120,0,0
+	.sdecl	'.debug_info',debug,cluster('sys_mutex_valid')
+	.sect	'.debug_info'
+.L208:
+	.word	303
+	.half	3
+	.word	.L209
+	.byte	4,1
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Documents\\project3\\iLLD_TC375_ADS_FreeRTOS_Basic\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L211,.L210
+	.byte	2
+	.word	.L169
+	.byte	3
+	.byte	'sys_mutex_valid',0,1,60,5
+	.word	.L338
+	.byte	1,1,1
+	.word	.L126,.L339,.L125
+	.byte	4
+	.byte	'mutex',0,1,60,34
+	.word	.L330,.L340
+	.byte	5
+	.word	.L126,.L339
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_mutex_valid')
+	.sect	'.debug_abbrev'
+.L209:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_mutex_valid')
+	.sect	'.debug_line'
+.L210:
+	.word	.L557-.L556
+.L556:
+	.half	3
+	.word	.L559-.L558
+.L558:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0,0,0,0,0
+.L559:
+	.byte	5,29,7,0,5,2
+	.word	.L126
+	.byte	3,61,1,5,13,9
+	.half	.L560-.L126
+	.byte	1,5,33,7,9
+	.half	.L561-.L560
+	.byte	1,5,40,9
+	.half	.L562-.L561
+	.byte	1,5,29,7,9
+	.half	.L563-.L562
+	.byte	1,5,5,9
+	.half	.L19-.L563
+	.byte	1,5,1,9
+	.half	.L21-.L19
+	.byte	3,1,1,7,9
+	.half	.L212-.L21
+	.byte	0,1,1
+.L557:
+	.sdecl	'.debug_ranges',debug,cluster('sys_mutex_valid')
+	.sect	'.debug_ranges'
+.L211:
+	.word	-1,.L126,0,.L212-.L126,0,0
+	.sdecl	'.debug_info',debug,cluster('sys_mutex_set_invalid')
+	.sect	'.debug_info'
+.L213:
+	.word	305
+	.half	3
+	.word	.L214
+	.byte	4,1
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Documents\\project3\\iLLD_TC375_ADS_FreeRTOS_Basic\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L216,.L215
+	.byte	2
+	.word	.L169
+	.byte	3
+	.byte	'sys_mutex_set_invalid',0,1,65,6,1,1,1
+	.word	.L128,.L341,.L127
+	.byte	4
+	.byte	'mutex',0,1,65,41
+	.word	.L330,.L342
+	.byte	5
+	.word	.L128,.L341
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_mutex_set_invalid')
+	.sect	'.debug_abbrev'
+.L214:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_mutex_set_invalid')
+	.sect	'.debug_line'
+.L215:
+	.word	.L565-.L564
+.L564:
+	.half	3
+	.word	.L567-.L566
+.L566:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0,0,0,0,0
+.L567:
+	.byte	5,5,7,0,5,2
+	.word	.L128
+	.byte	3,194,0,1,5,18,7,9
+	.half	.L568-.L128
+	.byte	3,2,1,5,16,9
+	.half	.L569-.L568
+	.byte	1,5,1,9
+	.half	.L22-.L569
+	.byte	3,2,1,7,9
+	.half	.L217-.L22
+	.byte	0,1,1
+.L565:
+	.sdecl	'.debug_ranges',debug,cluster('sys_mutex_set_invalid')
+	.sect	'.debug_ranges'
+.L216:
+	.word	-1,.L128,0,.L217-.L128,0,0
+	.sdecl	'.debug_info',debug,cluster('sys_sem_new')
+	.sect	'.debug_info'
+.L218:
+	.word	315
+	.half	3
+	.word	.L219
+	.byte	4,1
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Documents\\project3\\iLLD_TC375_ADS_FreeRTOS_Basic\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L221,.L220
+	.byte	2
+	.word	.L169
+	.byte	3
+	.byte	'sys_sem_new',0,1,76,7
+	.word	.L328
+	.byte	1,1,1
+	.word	.L130,.L343,.L129
+	.byte	4
+	.byte	'sem',0,1,76,30
+	.word	.L344,.L345
+	.byte	4
+	.byte	'count',0,1,76,40
+	.word	.L319,.L346
+	.byte	5
+	.word	.L130,.L343
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_sem_new')
+	.sect	'.debug_abbrev'
+.L219:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_sem_new')
+	.sect	'.debug_line'
+.L220:
+	.word	.L571-.L570
+.L570:
+	.half	3
+	.word	.L573-.L572
+.L572:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0,0,0,0,0
+.L573:
+	.byte	5,7,7,0,5,2
+	.word	.L130
+	.byte	3,203,0,1,5,5,9
+	.half	.L23-.L130
+	.byte	3,2,1,7,9
+	.half	.L574-.L23
+	.byte	1,5,12,9
+	.half	.L24-.L574
+	.byte	3,2,1,5,10,9
+	.half	.L575-.L24
+	.byte	1,5,9,9
+	.half	.L576-.L575
+	.byte	3,1,1,5,5,9
+	.half	.L577-.L576
+	.byte	1,5,9,7,9
+	.half	.L578-.L577
+	.byte	3,2,1,5,16,9
+	.half	.L579-.L578
+	.byte	3,1,1,5,9,9
+	.half	.L580-.L579
+	.byte	1,5,5,9
+	.half	.L25-.L580
+	.byte	3,3,1,5,9,7,9
+	.half	.L581-.L25
+	.byte	3,2,1,5,5,9
+	.half	.L28-.L581
+	.byte	3,3,1,5,12,9
+	.half	.L29-.L28
+	.byte	3,1,1,5,5,9
+	.half	.L582-.L29
+	.byte	1,5,1,9
+	.half	.L26-.L582
+	.byte	3,1,1,7,9
+	.half	.L222-.L26
+	.byte	0,1,1
+.L571:
+	.sdecl	'.debug_ranges',debug,cluster('sys_sem_new')
+	.sect	'.debug_ranges'
+.L221:
+	.word	-1,.L130,0,.L222-.L130,0,0
+	.sdecl	'.debug_info',debug,cluster('sys_sem_signal')
+	.sect	'.debug_info'
+.L223:
+	.word	296
+	.half	3
+	.word	.L224
+	.byte	4,1
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Documents\\project3\\iLLD_TC375_ADS_FreeRTOS_Basic\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L226,.L225
+	.byte	2
+	.word	.L169
+	.byte	3
+	.byte	'sys_sem_signal',0,1,108,6,1,1,1
+	.word	.L134,.L347,.L133
+	.byte	4
+	.byte	'sem',0,1,108,32
+	.word	.L344,.L348
+	.byte	5
+	.word	.L134,.L347
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_sem_signal')
+	.sect	'.debug_abbrev'
+.L224:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_sem_signal')
+	.sect	'.debug_line'
+.L225:
+	.word	.L584-.L583
+.L583:
+	.half	3
+	.word	.L586-.L585
+.L585:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0,0,0,0,0
+.L586:
+	.byte	5,6,7,0,5,2
+	.word	.L134
+	.byte	3,235,0,1,5,5,9
+	.half	.L34-.L134
+	.byte	3,2,1,7,9
+	.half	.L587-.L34
+	.byte	1,9
+	.half	.L36-.L587
+	.byte	3,1,1,5,1,9
+	.half	.L588-.L36
+	.byte	3,1,1,7,9
+	.half	.L227-.L588
+	.byte	0,1,1
+.L584:
+	.sdecl	'.debug_ranges',debug,cluster('sys_sem_signal')
+	.sect	'.debug_ranges'
+.L226:
+	.word	-1,.L134,0,.L227-.L134,0,0
+	.sdecl	'.debug_info',debug,cluster('sys_arch_sem_wait')
+	.sect	'.debug_info'
+.L228:
+	.word	405
+	.half	3
+	.word	.L229
+	.byte	4,1
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Documents\\project3\\iLLD_TC375_ADS_FreeRTOS_Basic\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L231,.L230
+	.byte	2
+	.word	.L169
+	.byte	3
+	.byte	'sys_arch_sem_wait',0,1,114,7
+	.word	.L349
+	.byte	1,1,1
+	.word	.L136,.L350,.L135
+	.byte	4
+	.byte	'sem',0,1,114,36
+	.word	.L344,.L351
+	.byte	4
+	.byte	'timeout',0,1,114,47
+	.word	.L349,.L352
+	.byte	5
+	.word	.L136,.L350
+	.byte	5
+	.word	.L39,.L350
+	.byte	6
+	.byte	'ticks',0,1,118,16
+	.word	.L326,.L353
+	.byte	6
+	.byte	'startTick',0,1,119,16
+	.word	.L326,.L354
+	.byte	5
+	.word	.L355,.L43
+	.byte	6
+	.byte	'endTick',0,1,136,1,20
+	.word	.L326,.L356
+	.byte	0,0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_arch_sem_wait')
+	.sect	'.debug_abbrev'
+.L229:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_arch_sem_wait')
+	.sect	'.debug_line'
+.L230:
+	.word	.L590-.L589
+.L589:
+	.half	3
+	.word	.L592-.L591
+.L591:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0,0,0,0,0
+.L592:
+	.byte	5,7,7,0,5,2
+	.word	.L136
+	.byte	3,241,0,1,5,5,9
+	.half	.L37-.L136
+	.byte	3,2,1,7,9
+	.half	.L593-.L37
+	.byte	1,5,45,9
+	.half	.L39-.L593
+	.byte	3,3,1,5,26,9
+	.half	.L439-.L39
+	.byte	1,5,5,9
+	.half	.L441-.L439
+	.byte	3,2,1,5,15,7,9
+	.half	.L594-.L441
+	.byte	3,2,1,5,30,9
+	.half	.L442-.L594
+	.byte	1,5,17,9
+	.half	.L40-.L442
+	.byte	3,4,1,5,9,9
+	.half	.L443-.L40
+	.byte	3,1,1,5,19,7,9
+	.half	.L595-.L443
+	.byte	3,2,1,5,9,9
+	.half	.L41-.L595
+	.byte	3,4,1,5,5,9
+	.half	.L440-.L41
+	.byte	1,5,47,7,9
+	.half	.L355-.L440
+	.byte	3,2,1,5,33,9
+	.half	.L444-.L355
+	.byte	3,1,1,5,46,9
+	.half	.L445-.L444
+	.byte	1,5,9,9
+	.half	.L596-.L445
+	.byte	1,5,12,9
+	.half	.L43-.L596
+	.byte	3,3,1,5,5,9
+	.half	.L597-.L43
+	.byte	1,5,1,9
+	.half	.L44-.L597
+	.byte	3,1,1,7,9
+	.half	.L232-.L44
+	.byte	0,1,1
+.L590:
+	.sdecl	'.debug_ranges',debug,cluster('sys_arch_sem_wait')
+	.sect	'.debug_ranges'
+.L231:
+	.word	-1,.L136,0,.L232-.L136,0,0
+	.sdecl	'.debug_info',debug,cluster('sys_sem_free')
+	.sect	'.debug_info'
+.L233:
+	.word	294
+	.half	3
+	.word	.L234
+	.byte	4,1
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Documents\\project3\\iLLD_TC375_ADS_FreeRTOS_Basic\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L236,.L235
+	.byte	2
+	.word	.L169
+	.byte	3
+	.byte	'sys_sem_free',0,1,96,6,1,1,1
+	.word	.L132,.L357,.L131
+	.byte	4
+	.byte	'sem',0,1,96,30
+	.word	.L344,.L358
+	.byte	5
+	.word	.L132,.L357
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_sem_free')
+	.sect	'.debug_abbrev'
+.L234:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_sem_free')
+	.sect	'.debug_line'
+.L235:
+	.word	.L599-.L598
+.L598:
+	.half	3
+	.word	.L601-.L600
+.L600:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0,0,0,0,0
+.L601:
+	.byte	5,6,7,0,5,2
+	.word	.L132
+	.byte	3,223,0,1,5,9,9
+	.half	.L431-.L132
+	.byte	3,2,1,5,27,7,9
+	.half	.L602-.L431
+	.byte	1,5,32,9
+	.half	.L603-.L602
+	.byte	1,5,9,7,9
+	.half	.L31-.L603
+	.byte	3,2,1,5,5,9
+	.half	.L32-.L31
+	.byte	3,3,1,5,12,9
+	.half	.L604-.L32
+	.byte	3,1,1,5,10,9
+	.half	.L605-.L604
+	.byte	1,5,5,9
+	.half	.L606-.L605
+	.byte	3,1,1,5,1,9
+	.half	.L33-.L606
+	.byte	3,1,1,7,9
+	.half	.L237-.L33
+	.byte	0,1,1
+.L599:
+	.sdecl	'.debug_ranges',debug,cluster('sys_sem_free')
+	.sect	'.debug_ranges'
+.L236:
+	.word	-1,.L132,0,.L237-.L132,0,0
+	.sdecl	'.debug_info',debug,cluster('sys_sem_valid')
+	.sect	'.debug_info'
+.L238:
+	.word	301
+	.half	3
+	.word	.L239
+	.byte	4,1
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Documents\\project3\\iLLD_TC375_ADS_FreeRTOS_Basic\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L241,.L240
+	.byte	2
+	.word	.L169
+	.byte	3
+	.byte	'sys_sem_valid',0,1,143,1,5
+	.word	.L338
+	.byte	1,1,1
+	.word	.L138,.L359,.L137
+	.byte	4
+	.byte	'sem',0,1,143,1,30
+	.word	.L344,.L360
+	.byte	5
+	.word	.L138,.L359
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_sem_valid')
+	.sect	'.debug_abbrev'
+.L239:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_sem_valid')
+	.sect	'.debug_line'
+.L240:
+	.word	.L608-.L607
+.L607:
+	.half	3
+	.word	.L610-.L609
+.L609:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0,0,0,0,0
+.L610:
+	.byte	5,27,7,0,5,2
+	.word	.L138
+	.byte	3,144,1,1,5,13,9
+	.half	.L611-.L138
+	.byte	1,5,31,7,9
+	.half	.L612-.L611
+	.byte	1,5,36,9
+	.half	.L613-.L612
+	.byte	1,5,27,7,9
+	.half	.L614-.L613
+	.byte	1,5,5,9
+	.half	.L46-.L614
+	.byte	1,5,1,9
+	.half	.L48-.L46
+	.byte	3,1,1,7,9
+	.half	.L242-.L48
+	.byte	0,1,1
+.L608:
+	.sdecl	'.debug_ranges',debug,cluster('sys_sem_valid')
+	.sect	'.debug_ranges'
+.L241:
+	.word	-1,.L138,0,.L242-.L138,0,0
+	.sdecl	'.debug_info',debug,cluster('sys_sem_set_invalid')
+	.sect	'.debug_info'
+.L243:
+	.word	303
+	.half	3
+	.word	.L244
+	.byte	4,1
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Documents\\project3\\iLLD_TC375_ADS_FreeRTOS_Basic\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L246,.L245
+	.byte	2
+	.word	.L169
+	.byte	3
+	.byte	'sys_sem_set_invalid',0,1,148,1,6,1,1,1
+	.word	.L140,.L361,.L139
+	.byte	4
+	.byte	'sem',0,1,148,1,37
+	.word	.L344,.L362
+	.byte	5
+	.word	.L140,.L361
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_sem_set_invalid')
+	.sect	'.debug_abbrev'
+.L244:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_sem_set_invalid')
+	.sect	'.debug_line'
+.L245:
+	.word	.L616-.L615
+.L615:
+	.half	3
+	.word	.L618-.L617
+.L617:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0,0,0,0,0
+.L618:
+	.byte	5,5,7,0,5,2
+	.word	.L140
+	.byte	3,149,1,1,5,16,7,9
+	.half	.L619-.L140
+	.byte	3,2,1,5,14,9
+	.half	.L620-.L619
+	.byte	1,5,1,9
+	.half	.L49-.L620
+	.byte	3,2,1,7,9
+	.half	.L247-.L49
+	.byte	0,1,1
+.L616:
+	.sdecl	'.debug_ranges',debug,cluster('sys_sem_set_invalid')
+	.sect	'.debug_ranges'
+.L246:
+	.word	-1,.L140,0,.L247-.L140,0,0
+	.sdecl	'.debug_info',debug,cluster('sys_mbox_new')
+	.sect	'.debug_info'
+.L248:
+	.word	319
+	.half	3
+	.word	.L249
+	.byte	4,1
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Documents\\project3\\iLLD_TC375_ADS_FreeRTOS_Basic\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L251,.L250
+	.byte	2
+	.word	.L169
+	.byte	3
+	.byte	'sys_mbox_new',0,1,159,1,7
+	.word	.L328
+	.byte	1,1,1
+	.word	.L142,.L363,.L141
+	.byte	4
+	.byte	'mbox',0,1,159,1,32
+	.word	.L364,.L365
+	.byte	4
+	.byte	'size',0,1,159,1,42
+	.word	.L338,.L366
+	.byte	5
+	.word	.L142,.L363
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_mbox_new')
+	.sect	'.debug_abbrev'
+.L249:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_mbox_new')
+	.sect	'.debug_line'
+.L250:
+	.word	.L622-.L621
+.L621:
+	.half	3
+	.word	.L624-.L623
+.L623:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0,0,0,0,0
+.L624:
+	.byte	5,7,7,0,5,2
+	.word	.L142
+	.byte	3,158,1,1,5,5,9
+	.half	.L50-.L142
+	.byte	3,2,1,7,9
+	.half	.L625-.L50
+	.byte	1,9
+	.half	.L51-.L625
+	.byte	3,1,1,5,14,7,9
+	.half	.L626-.L51
+	.byte	3,2,1,5,13,9
+	.half	.L52-.L626
+	.byte	3,3,1,5,11,9
+	.half	.L450-.L52
+	.byte	1,5,9,9
+	.half	.L627-.L450
+	.byte	3,1,1,5,5,9
+	.half	.L628-.L627
+	.byte	1,5,9,7,9
+	.half	.L629-.L628
+	.byte	3,2,1,5,16,9
+	.half	.L630-.L629
+	.byte	3,1,1,5,9,9
+	.half	.L631-.L630
+	.byte	1,5,5,9
+	.half	.L55-.L631
+	.byte	3,3,1,5,12,9
+	.half	.L56-.L55
+	.byte	3,1,1,5,5,9
+	.half	.L632-.L56
+	.byte	1,5,1,9
+	.half	.L54-.L632
+	.byte	3,1,1,7,9
+	.half	.L252-.L54
+	.byte	0,1,1
+.L622:
+	.sdecl	'.debug_ranges',debug,cluster('sys_mbox_new')
+	.sect	'.debug_ranges'
+.L251:
+	.word	-1,.L142,0,.L252-.L142,0,0
+	.sdecl	'.debug_info',debug,cluster('sys_mbox_post')
+	.sect	'.debug_info'
+.L253:
+	.word	315
+	.half	3
+	.word	.L254
+	.byte	4,1
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Documents\\project3\\iLLD_TC375_ADS_FreeRTOS_Basic\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L256,.L255
+	.byte	2
+	.word	.L169
+	.byte	3
+	.byte	'sys_mbox_post',0,1,191,1,6,1,1,1
+	.word	.L146,.L367,.L145
+	.byte	4
+	.byte	'mbox',0,1,191,1,32
+	.word	.L364,.L368
+	.byte	4
+	.byte	'msg',0,1,191,1,44
+	.word	.L369,.L370
+	.byte	5
+	.word	.L146,.L367
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_mbox_post')
+	.sect	'.debug_abbrev'
+.L254:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_mbox_post')
+	.sect	'.debug_line'
+.L255:
+	.word	.L634-.L633
+.L633:
+	.half	3
+	.word	.L636-.L635
+.L635:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0,0,0,0,0
+.L636:
+	.byte	5,6,7,0,5,2
+	.word	.L146
+	.byte	3,190,1,1,5,5,9
+	.half	.L63-.L146
+	.byte	3,2,1,7,9
+	.half	.L637-.L63
+	.byte	1,5,60,9
+	.half	.L65-.L637
+	.byte	3,1,1,5,12,9
+	.half	.L66-.L65
+	.byte	1,5,60,9
+	.half	.L638-.L66
+	.byte	1,5,1,7,9
+	.half	.L639-.L638
+	.byte	3,3,1,7,9
+	.half	.L257-.L639
+	.byte	0,1,1
+.L634:
+	.sdecl	'.debug_ranges',debug,cluster('sys_mbox_post')
+	.sect	'.debug_ranges'
+.L256:
+	.word	-1,.L146,0,.L257-.L146,0,0
+	.sdecl	'.debug_info',debug,cluster('sys_mbox_trypost')
+	.sect	'.debug_info'
+.L258:
+	.word	322
+	.half	3
+	.word	.L259
+	.byte	4,1
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Documents\\project3\\iLLD_TC375_ADS_FreeRTOS_Basic\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L261,.L260
+	.byte	2
+	.word	.L169
+	.byte	3
+	.byte	'sys_mbox_trypost',0,1,199,1,7
+	.word	.L328
+	.byte	1,1,1
+	.word	.L148,.L371,.L147
+	.byte	4
+	.byte	'mbox',0,1,199,1,36
+	.word	.L364,.L372
+	.byte	4
+	.byte	'msg',0,1,199,1,48
+	.word	.L369,.L373
+	.byte	5
+	.word	.L148,.L371
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_mbox_trypost')
+	.sect	'.debug_abbrev'
+.L259:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_mbox_trypost')
+	.sect	'.debug_line'
+.L260:
+	.word	.L641-.L640
+.L640:
+	.half	3
+	.word	.L643-.L642
+.L642:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0,0,0,0,0
+.L643:
+	.byte	5,7,7,0,5,2
+	.word	.L148
+	.byte	3,198,1,1,5,5,9
+	.half	.L68-.L148
+	.byte	3,2,1,7,9
+	.half	.L644-.L68
+	.byte	1,5,9,9
+	.half	.L70-.L644
+	.byte	3,1,1,5,5,9
+	.half	.L645-.L70
+	.byte	1,5,16,7,9
+	.half	.L646-.L645
+	.byte	3,2,1,5,9,9
+	.half	.L647-.L646
+	.byte	1,5,5,9
+	.half	.L71-.L647
+	.byte	3,3,1,5,12,9
+	.half	.L648-.L71
+	.byte	3,1,1,5,5,9
+	.half	.L649-.L648
+	.byte	1,5,1,9
+	.half	.L72-.L649
+	.byte	3,1,1,7,9
+	.half	.L262-.L72
+	.byte	0,1,1
+.L641:
+	.sdecl	'.debug_ranges',debug,cluster('sys_mbox_trypost')
+	.sect	'.debug_ranges'
+.L261:
+	.word	-1,.L148,0,.L262-.L148,0,0
+	.sdecl	'.debug_info',debug,cluster('sys_mbox_trypost_fromisr')
+	.sect	'.debug_info'
+.L263:
+	.word	400
+	.half	3
+	.word	.L264
+	.byte	4,1
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Documents\\project3\\iLLD_TC375_ADS_FreeRTOS_Basic\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L266,.L265
+	.byte	2
+	.word	.L169
+	.byte	3
+	.byte	'sys_mbox_trypost_fromisr',0,1,211,1,7
+	.word	.L328
+	.byte	1,1,1
+	.word	.L150,.L374,.L149
+	.byte	4
+	.byte	'mbox',0,1,211,1,44
+	.word	.L364,.L375
+	.byte	4
+	.byte	'msg',0,1,211,1,56
+	.word	.L369,.L376
+	.byte	5
+	.word	.L150,.L374
+	.byte	6
+	.byte	'higherPriorityTaskWoken',0,1,213,1,16
+	.word	.L322,.L377
+	.byte	5
+	.word	.L378,.L379
+	.byte	6
+	.byte	'xTrigger',0,1,218,1,9
+	.word	.L380,.L381
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_mbox_trypost_fromisr')
+	.sect	'.debug_abbrev'
+.L264:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_mbox_trypost_fromisr')
+	.sect	'.debug_line'
+.L265:
+	.word	.L651-.L650
+.L650:
+	.half	3
+	.word	.L653-.L652
+.L652:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0,0,0,0,0
+.L653:
+	.byte	5,7,7,0,5,2
+	.word	.L150
+	.byte	3,210,1,1,5,42,9
+	.half	.L654-.L150
+	.byte	3,2,1,5,40,9
+	.half	.L655-.L654
+	.byte	1,5,5,9
+	.half	.L74-.L655
+	.byte	3,2,1,7,9
+	.half	.L656-.L74
+	.byte	1,5,9,9
+	.half	.L76-.L656
+	.byte	3,1,1,5,5,9
+	.half	.L657-.L76
+	.byte	1,5,9,7,9
+	.half	.L378-.L657
+	.byte	3,2,1,5,16,9
+	.half	.L379-.L378
+	.byte	3,1,1,5,9,9
+	.half	.L658-.L379
+	.byte	1,5,5,9
+	.half	.L77-.L658
+	.byte	3,3,1,5,12,9
+	.half	.L659-.L77
+	.byte	3,1,1,5,5,9
+	.half	.L660-.L659
+	.byte	1,5,1,9
+	.half	.L80-.L660
+	.byte	3,1,1,7,9
+	.half	.L267-.L80
+	.byte	0,1,1
+.L651:
+	.sdecl	'.debug_ranges',debug,cluster('sys_mbox_trypost_fromisr')
+	.sect	'.debug_ranges'
+.L266:
+	.word	-1,.L150,0,.L267-.L150,0,0
+	.sdecl	'.debug_info',debug,cluster('sys_arch_mbox_fetch')
+	.sect	'.debug_info'
+.L268:
+	.word	430
+	.half	3
+	.word	.L269
+	.byte	4,1
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Documents\\project3\\iLLD_TC375_ADS_FreeRTOS_Basic\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L271,.L270
+	.byte	2
+	.word	.L169
+	.byte	3
+	.byte	'sys_arch_mbox_fetch',0,1,226,1,7
+	.word	.L349
+	.byte	1,1,1
+	.word	.L152,.L382,.L151
+	.byte	4
+	.byte	'mbox',0,1,226,1,39
+	.word	.L364,.L383
+	.byte	4
+	.byte	'msg',0,1,226,1,52
+	.word	.L384,.L385
+	.byte	4
+	.byte	'timeout',0,1,226,1,63
+	.word	.L349,.L386
+	.byte	5
+	.word	.L152,.L382
+	.byte	5
+	.word	.L84,.L382
+	.byte	6
+	.byte	'ticks',0,1,230,1,16
+	.word	.L326,.L387
+	.byte	6
+	.byte	'startTick',0,1,231,1,16
+	.word	.L326,.L388
+	.byte	5
+	.word	.L389,.L88
+	.byte	6
+	.byte	'endTick',0,1,248,1,20
+	.word	.L326,.L390
+	.byte	0,0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_arch_mbox_fetch')
+	.sect	'.debug_abbrev'
+.L269:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_arch_mbox_fetch')
+	.sect	'.debug_line'
+.L270:
+	.word	.L662-.L661
+.L661:
+	.half	3
+	.word	.L664-.L663
+.L663:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0,0,0,0,0
+.L664:
+	.byte	5,7,7,0,5,2
+	.word	.L152
+	.byte	3,225,1,1,5,5,9
+	.half	.L82-.L152
+	.byte	3,2,1,7,9
+	.half	.L665-.L82
+	.byte	1,5,45,9
+	.half	.L84-.L665
+	.byte	3,3,1,5,26,9
+	.half	.L468-.L84
+	.byte	1,5,5,9
+	.half	.L470-.L468
+	.byte	3,2,1,5,15,7,9
+	.half	.L666-.L470
+	.byte	3,2,1,5,30,9
+	.half	.L471-.L666
+	.byte	1,5,17,9
+	.half	.L85-.L471
+	.byte	3,4,1,5,9,9
+	.half	.L472-.L85
+	.byte	3,1,1,5,19,7,9
+	.half	.L667-.L472
+	.byte	3,2,1,5,23,9
+	.half	.L86-.L667
+	.byte	3,4,1,5,35,9
+	.half	.L668-.L86
+	.byte	1,5,5,9
+	.half	.L469-.L668
+	.byte	1,5,47,7,9
+	.half	.L389-.L469
+	.byte	3,2,1,5,33,9
+	.half	.L474-.L389
+	.byte	3,1,1,5,46,9
+	.half	.L475-.L474
+	.byte	1,5,9,9
+	.half	.L669-.L475
+	.byte	1,5,5,9
+	.half	.L88-.L669
+	.byte	3,3,1,5,16,7,9
+	.half	.L670-.L88
+	.byte	3,2,1,5,14,9
+	.half	.L671-.L670
+	.byte	1,5,12,9
+	.half	.L90-.L671
+	.byte	3,2,1,5,5,9
+	.half	.L672-.L90
+	.byte	1,5,1,9
+	.half	.L89-.L672
+	.byte	3,1,1,7,9
+	.half	.L272-.L89
+	.byte	0,1,1
+.L662:
+	.sdecl	'.debug_ranges',debug,cluster('sys_arch_mbox_fetch')
+	.sect	'.debug_ranges'
+.L271:
+	.word	-1,.L152,0,.L272-.L152,0,0
+	.sdecl	'.debug_info',debug,cluster('sys_arch_mbox_tryfetch')
+	.sect	'.debug_info'
+.L273:
+	.word	328
+	.half	3
+	.word	.L274
+	.byte	4,1
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Documents\\project3\\iLLD_TC375_ADS_FreeRTOS_Basic\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L276,.L275
+	.byte	2
+	.word	.L169
+	.byte	3
+	.byte	'sys_arch_mbox_tryfetch',0,1,131,2,7
+	.word	.L349
+	.byte	1,1,1
+	.word	.L154,.L391,.L153
+	.byte	4
+	.byte	'mbox',0,1,131,2,42
+	.word	.L364,.L392
+	.byte	4
+	.byte	'msg',0,1,131,2,55
+	.word	.L384,.L393
+	.byte	5
+	.word	.L154,.L391
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_arch_mbox_tryfetch')
+	.sect	'.debug_abbrev'
+.L274:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_arch_mbox_tryfetch')
+	.sect	'.debug_line'
+.L275:
+	.word	.L674-.L673
+.L673:
+	.half	3
+	.word	.L676-.L675
+.L675:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0,0,0,0,0
+.L676:
+	.byte	5,7,7,0,5,2
+	.word	.L154
+	.byte	3,130,2,1,5,5,9
+	.half	.L92-.L154
+	.byte	3,2,1,7,9
+	.half	.L677-.L92
+	.byte	1,5,23,9
+	.half	.L94-.L677
+	.byte	3,2,1,5,35,9
+	.half	.L678-.L94
+	.byte	1,5,5,9
+	.half	.L480-.L678
+	.byte	1,5,16,7,9
+	.half	.L679-.L480
+	.byte	3,2,1,5,9,9
+	.half	.L680-.L679
+	.byte	1,5,12,9
+	.half	.L95-.L680
+	.byte	3,3,1,5,5,9
+	.half	.L681-.L95
+	.byte	1,5,1,9
+	.half	.L96-.L681
+	.byte	3,1,1,7,9
+	.half	.L277-.L96
+	.byte	0,1,1
+.L674:
+	.sdecl	'.debug_ranges',debug,cluster('sys_arch_mbox_tryfetch')
+	.sect	'.debug_ranges'
+.L276:
+	.word	-1,.L154,0,.L277-.L154,0,0
+	.sdecl	'.debug_info',debug,cluster('sys_mbox_free')
+	.sect	'.debug_info'
+.L278:
+	.word	298
+	.half	3
+	.word	.L279
+	.byte	4,1
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Documents\\project3\\iLLD_TC375_ADS_FreeRTOS_Basic\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L281,.L280
+	.byte	2
+	.word	.L169
+	.byte	3
+	.byte	'sys_mbox_free',0,1,178,1,6,1,1,1
+	.word	.L144,.L394,.L143
+	.byte	4
+	.byte	'mbox',0,1,178,1,32
+	.word	.L364,.L395
+	.byte	5
+	.word	.L144,.L394
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_mbox_free')
+	.sect	'.debug_abbrev'
+.L279:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_mbox_free')
+	.sect	'.debug_line'
+.L280:
+	.word	.L683-.L682
+.L682:
+	.half	3
+	.word	.L685-.L684
+.L684:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0,0,0,0,0
+.L685:
+	.byte	5,6,7,0,5,2
+	.word	.L144
+	.byte	3,177,1,1,5,9,9
+	.half	.L453-.L144
+	.byte	3,2,1,5,28,7,9
+	.half	.L686-.L453
+	.byte	1,5,34,9
+	.half	.L687-.L686
+	.byte	1,5,9,7,9
+	.half	.L58-.L687
+	.byte	3,2,1,5,5,9
+	.half	.L61-.L58
+	.byte	3,3,1,5,18,9
+	.half	.L62-.L61
+	.byte	3,1,1,5,13,9
+	.half	.L688-.L62
+	.byte	3,1,1,5,11,9
+	.half	.L689-.L688
+	.byte	1,5,5,9
+	.half	.L690-.L689
+	.byte	3,1,1,5,1,9
+	.half	.L60-.L690
+	.byte	3,1,1,7,9
+	.half	.L282-.L60
+	.byte	0,1,1
+.L683:
+	.sdecl	'.debug_ranges',debug,cluster('sys_mbox_free')
+	.sect	'.debug_ranges'
+.L281:
+	.word	-1,.L144,0,.L282-.L144,0,0
+	.sdecl	'.debug_info',debug,cluster('sys_mbox_valid')
+	.sect	'.debug_info'
+.L283:
+	.word	303
+	.half	3
+	.word	.L284
+	.byte	4,1
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Documents\\project3\\iLLD_TC375_ADS_FreeRTOS_Basic\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L286,.L285
+	.byte	2
+	.word	.L169
+	.byte	3
+	.byte	'sys_mbox_valid',0,1,143,2,5
+	.word	.L338
+	.byte	1,1,1
+	.word	.L156,.L396,.L155
+	.byte	4
+	.byte	'mbox',0,1,143,2,32
+	.word	.L364,.L397
+	.byte	5
+	.word	.L156,.L396
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_mbox_valid')
+	.sect	'.debug_abbrev'
+.L284:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_mbox_valid')
+	.sect	'.debug_line'
+.L285:
+	.word	.L692-.L691
+.L691:
+	.half	3
+	.word	.L694-.L693
+.L693:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0,0,0,0,0
+.L694:
+	.byte	5,28,7,0,5,2
+	.word	.L156
+	.byte	3,144,2,1,5,13,9
+	.half	.L695-.L156
+	.byte	1,5,32,7,9
+	.half	.L696-.L695
+	.byte	1,5,38,9
+	.half	.L697-.L696
+	.byte	1,5,28,7,9
+	.half	.L698-.L697
+	.byte	1,5,5,9
+	.half	.L98-.L698
+	.byte	1,5,1,9
+	.half	.L100-.L98
+	.byte	3,1,1,7,9
+	.half	.L287-.L100
+	.byte	0,1,1
+.L692:
+	.sdecl	'.debug_ranges',debug,cluster('sys_mbox_valid')
+	.sect	'.debug_ranges'
+.L286:
+	.word	-1,.L156,0,.L287-.L156,0,0
+	.sdecl	'.debug_info',debug,cluster('sys_mbox_set_invalid')
+	.sect	'.debug_info'
+.L288:
+	.word	305
+	.half	3
+	.word	.L289
+	.byte	4,1
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Documents\\project3\\iLLD_TC375_ADS_FreeRTOS_Basic\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L291,.L290
+	.byte	2
+	.word	.L169
+	.byte	3
+	.byte	'sys_mbox_set_invalid',0,1,148,2,6,1,1,1
+	.word	.L158,.L398,.L157
+	.byte	4
+	.byte	'mbox',0,1,148,2,39
+	.word	.L364,.L399
+	.byte	5
+	.word	.L158,.L398
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_mbox_set_invalid')
+	.sect	'.debug_abbrev'
+.L289:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_mbox_set_invalid')
+	.sect	'.debug_line'
+.L290:
+	.word	.L700-.L699
+.L699:
+	.half	3
+	.word	.L702-.L701
+.L701:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0,0,0,0,0
+.L702:
+	.byte	5,5,7,0,5,2
+	.word	.L158
+	.byte	3,149,2,1,5,17,7,9
+	.half	.L703-.L158
+	.byte	3,2,1,5,15,9
+	.half	.L704-.L703
+	.byte	1,5,1,9
+	.half	.L101-.L704
+	.byte	3,2,1,7,9
+	.half	.L292-.L101
+	.byte	0,1,1
+.L700:
+	.sdecl	'.debug_ranges',debug,cluster('sys_mbox_set_invalid')
+	.sect	'.debug_ranges'
+.L291:
+	.word	-1,.L158,0,.L292-.L158,0,0
+	.sdecl	'.debug_info',debug,cluster('sys_thread_new')
+	.sect	'.debug_info'
+.L293:
+	.word	426
+	.half	3
+	.word	.L294
+	.byte	4,1
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Documents\\project3\\iLLD_TC375_ADS_FreeRTOS_Basic\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L296,.L295
+	.byte	2
+	.word	.L169
+	.byte	3
+	.byte	'sys_thread_new',0,1,159,2,14
+	.word	.L400
+	.byte	1,1,1
+	.word	.L160,.L401,.L159
+	.byte	4
+	.byte	'name',0,1,159,2,41
+	.word	.L402,.L403
+	.byte	4
+	.byte	'thread',0,1,160,2,44
+	.word	.L404,.L405
+	.byte	4
+	.byte	'arg',0,1,161,2,35
+	.word	.L369,.L406
+	.byte	4
+	.byte	'stacksize',0,1,162,2,33
+	.word	.L338,.L407
+	.byte	4
+	.byte	'prio',0,1,163,2,33
+	.word	.L338,.L408
+	.byte	5
+	.word	.L160,.L401
+	.byte	6
+	.byte	'handle',0,1,165,2,18
+	.word	.L409,.L410
+	.byte	6
+	.byte	'stackDepth',0,1,166,2,17
+	.word	.L349,.L411
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_thread_new')
+	.sect	'.debug_abbrev'
+.L294:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_thread_new')
+	.sect	'.debug_line'
+.L295:
+	.word	.L706-.L705
+.L705:
+	.half	3
+	.word	.L708-.L707
+.L707:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0,0,0,0,0
+.L708:
+	.byte	5,14,7,0,5,2
+	.word	.L160
+	.byte	3,158,2,1,5,27,9
+	.half	.L486-.L160
+	.byte	3,6,1,5,25,9
+	.half	.L709-.L486
+	.byte	1,5,5,9
+	.half	.L710-.L709
+	.byte	3,3,1,5,19,7,9
+	.half	.L711-.L710
+	.byte	3,2,1,5,43,9
+	.half	.L102-.L711
+	.byte	3,3,1,5,41,9
+	.half	.L712-.L102
+	.byte	1,5,22,9
+	.half	.L488-.L712
+	.byte	3,1,1,5,5,9
+	.half	.L713-.L488
+	.byte	1,5,20,7,9
+	.half	.L714-.L713
+	.byte	3,2,1,5,35,9
+	.half	.L103-.L714
+	.byte	3,3,1,5,72,9
+	.half	.L484-.L103
+	.byte	1,5,5,9
+	.half	.L482-.L484
+	.byte	1,5,9,7,9
+	.half	.L105-.L482
+	.byte	3,2,1,5,16,9
+	.half	.L106-.L105
+	.byte	3,1,1,5,9,9
+	.half	.L715-.L106
+	.byte	1,5,12,9
+	.half	.L104-.L715
+	.byte	3,3,1,5,5,9
+	.half	.L716-.L104
+	.byte	1,5,1,9
+	.half	.L107-.L716
+	.byte	3,1,1,7,9
+	.half	.L297-.L107
+	.byte	0,1,1
+.L706:
+	.sdecl	'.debug_ranges',debug,cluster('sys_thread_new')
+	.sect	'.debug_ranges'
+.L296:
+	.word	-1,.L160,0,.L297-.L160,0,0
+	.sdecl	'.debug_info',debug,cluster('sys_init')
+	.sect	'.debug_info'
+.L298:
+	.word	275
+	.half	3
+	.word	.L299
+	.byte	4,1
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Documents\\project3\\iLLD_TC375_ADS_FreeRTOS_Basic\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L301,.L300
+	.byte	2
+	.word	.L169
+	.byte	3
+	.byte	'sys_init',0,1,208,2,6,1,1,1
+	.word	.L168,.L412,.L167
+	.byte	4
+	.word	.L168,.L412
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_init')
+	.sect	'.debug_abbrev'
+.L299:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_init')
+	.sect	'.debug_line'
+.L300:
+	.word	.L718-.L717
+.L717:
+	.half	3
+	.word	.L720-.L719
+.L719:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0,0,0,0,0
+.L720:
+	.byte	5,1,7,0,5,2
+	.word	.L168
+	.byte	3,210,2,1,7,9
+	.half	.L302-.L168
+	.byte	0,1,1
+.L718:
+	.sdecl	'.debug_ranges',debug,cluster('sys_init')
+	.sect	'.debug_ranges'
+.L301:
+	.word	-1,.L168,0,.L302-.L168,0,0
+	.sdecl	'.debug_info',debug,cluster('sys_now')
+	.sect	'.debug_info'
+.L303:
+	.word	278
+	.half	3
+	.word	.L304
+	.byte	4,1
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Documents\\project3\\iLLD_TC375_ADS_FreeRTOS_Basic\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L306,.L305
+	.byte	2
+	.word	.L169
+	.byte	3
+	.byte	'sys_now',0,1,203,2,7
+	.word	.L349
+	.byte	1,1,1
+	.word	.L166,.L413,.L165
+	.byte	4
+	.word	.L166,.L413
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_now')
+	.sect	'.debug_abbrev'
+.L304:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_now')
+	.sect	'.debug_line'
+.L305:
+	.word	.L722-.L721
+.L721:
+	.half	3
+	.word	.L724-.L723
+.L723:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0,0,0,0,0
+.L724:
+	.byte	5,37,7,0,5,2
+	.word	.L166
+	.byte	3,204,2,1,5,40,9
+	.half	.L725-.L166
+	.byte	1,5,5,9
+	.half	.L726-.L725
+	.byte	1,5,1,9
+	.half	.L110-.L726
+	.byte	3,1,1,7,9
+	.half	.L307-.L110
+	.byte	0,1,1
+.L722:
+	.sdecl	'.debug_ranges',debug,cluster('sys_now')
+	.sect	'.debug_ranges'
+.L306:
+	.word	-1,.L166,0,.L307-.L166,0,0
+	.sdecl	'.debug_info',debug,cluster('sys_arch_protect')
+	.sect	'.debug_info'
+.L308:
+	.word	287
+	.half	3
+	.word	.L309
+	.byte	4,1
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Documents\\project3\\iLLD_TC375_ADS_FreeRTOS_Basic\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L311,.L310
+	.byte	2
+	.word	.L169
+	.byte	3
+	.byte	'sys_arch_protect',0,1,191,2,12
+	.word	.L349
+	.byte	1,1,1
+	.word	.L162,.L414,.L161
+	.byte	4
+	.word	.L162,.L414
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_arch_protect')
+	.sect	'.debug_abbrev'
+.L309:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_arch_protect')
+	.sect	'.debug_line'
+.L310:
+	.word	.L728-.L727
+.L727:
+	.half	3
+	.word	.L730-.L729
+.L729:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0,0,0,0,0
+.L730:
+	.byte	5,5,7,0,5,2
+	.word	.L162
+	.byte	3,192,2,1,5,12,9
+	.half	.L731-.L162
+	.byte	3,1,1,5,5,9
+	.half	.L732-.L731
+	.byte	1,5,1,9
+	.half	.L109-.L732
+	.byte	3,1,1,7,9
+	.half	.L312-.L109
+	.byte	0,1,1
+.L728:
+	.sdecl	'.debug_ranges',debug,cluster('sys_arch_protect')
+	.sect	'.debug_ranges'
+.L311:
+	.word	-1,.L162,0,.L312-.L162,0,0
+	.sdecl	'.debug_info',debug,cluster('sys_arch_unprotect')
+	.sect	'.debug_info'
+.L313:
+	.word	303
+	.half	3
+	.word	.L314
+	.byte	4,1
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'C:\\Users\\USER\\Documents\\project3\\iLLD_TC375_ADS_FreeRTOS_Basic\\TriCore Debug (TASKING)\\',0,12
+	.byte	1
+	.word	.L316,.L315
+	.byte	2
+	.word	.L169
+	.byte	3
+	.byte	'sys_arch_unprotect',0,1,197,2,6,1,1,1
+	.word	.L164,.L415,.L163
+	.byte	4
+	.byte	'pval',0,1,197,2,36
+	.word	.L349,.L416
+	.byte	5
+	.word	.L164,.L415
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('sys_arch_unprotect')
+	.sect	'.debug_abbrev'
+.L314:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('sys_arch_unprotect')
+	.sect	'.debug_line'
+.L315:
+	.word	.L734-.L733
+.L733:
+	.half	3
+	.word	.L736-.L735
+.L735:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../Libraries/Ethernet/lwip/port/src/sys_arch.c',0,0,0,0,0
+.L736:
+	.byte	5,5,7,0,5,2
+	.word	.L164
+	.byte	3,199,2,1,5,1,9
+	.half	.L489-.L164
+	.byte	3,1,1,7,9
+	.half	.L317-.L489
+	.byte	0,1,1
+.L734:
+	.sdecl	'.debug_ranges',debug,cluster('sys_arch_unprotect')
+	.sect	'.debug_ranges'
+.L316:
+	.word	-1,.L164,0,.L317-.L164,0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_arch_mbox_fetch')
+	.sect	'.debug_loc'
+.L390:
+	.word	-1,.L152,.L474-.L152,.L475-.L152
+	.half	1
+	.byte	82
+	.word	0,0
+.L383:
+	.word	-1,.L152,0,.L464-.L152
+	.half	1
+	.byte	100
+	.word	.L465-.L152,.L382-.L152
+	.half	1
+	.byte	108
+	.word	0,0
+.L385:
+	.word	-1,.L152,0,.L84-.L152
+	.half	1
+	.byte	101
+	.word	.L466-.L152,.L382-.L152
+	.half	1
+	.byte	109
+	.word	.L473-.L152,.L469-.L152
+	.half	1
+	.byte	101
+	.word	0,0
+.L388:
+	.word	-1,.L152,.L468-.L152,.L469-.L152
+	.half	1
+	.byte	82
+	.word	.L470-.L152,.L382-.L152
+	.half	1
+	.byte	89
+	.word	0,0
+.L151:
+	.word	-1,.L152,0,.L463-.L152
+	.half	2
+	.byte	138,0
+	.word	.L463-.L152,.L382-.L152
+	.half	2
+	.byte	138,16
+	.word	.L382-.L152,.L382-.L152
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L387:
+	.word	-1,.L152,.L471-.L152,.L85-.L152
+	.half	1
+	.byte	84
+	.word	.L472-.L152,.L469-.L152
+	.half	1
+	.byte	84
+	.word	0,0
+.L386:
+	.word	-1,.L152,0,.L84-.L152
+	.half	1
+	.byte	84
+	.word	.L82-.L152,.L467-.L152
+	.half	1
+	.byte	88
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_arch_mbox_tryfetch')
+	.sect	'.debug_loc'
+.L392:
+	.word	-1,.L154,0,.L477-.L154
+	.half	1
+	.byte	100
+	.word	.L478-.L154,.L391-.L154
+	.half	1
+	.byte	108
+	.word	0,0
+.L393:
+	.word	-1,.L154,0,.L94-.L154
+	.half	1
+	.byte	101
+	.word	.L92-.L154,.L391-.L154
+	.half	1
+	.byte	109
+	.word	.L479-.L154,.L480-.L154
+	.half	1
+	.byte	101
+	.word	0,0
+.L153:
+	.word	-1,.L154,0,.L476-.L154
+	.half	2
+	.byte	138,0
+	.word	.L476-.L154,.L391-.L154
+	.half	2
+	.byte	138,16
+	.word	.L391-.L154,.L391-.L154
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_arch_protect')
+	.sect	'.debug_loc'
+.L161:
+	.word	-1,.L162,0,.L414-.L162
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_arch_sem_wait')
+	.sect	'.debug_loc'
+.L356:
+	.word	-1,.L136,.L444-.L136,.L445-.L136
+	.half	1
+	.byte	82
+	.word	0,0
+.L351:
+	.word	-1,.L136,0,.L436-.L136
+	.half	1
+	.byte	100
+	.word	.L437-.L136,.L350-.L136
+	.half	1
+	.byte	108
+	.word	0,0
+.L354:
+	.word	-1,.L136,.L439-.L136,.L440-.L136
+	.half	1
+	.byte	82
+	.word	.L441-.L136,.L350-.L136
+	.half	1
+	.byte	89
+	.word	0,0
+.L135:
+	.word	-1,.L136,0,.L435-.L136
+	.half	2
+	.byte	138,0
+	.word	.L435-.L136,.L350-.L136
+	.half	2
+	.byte	138,16
+	.word	.L350-.L136,.L350-.L136
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L353:
+	.word	-1,.L136,.L442-.L136,.L40-.L136
+	.half	1
+	.byte	84
+	.word	.L443-.L136,.L440-.L136
+	.half	1
+	.byte	84
+	.word	0,0
+.L352:
+	.word	-1,.L136,0,.L39-.L136
+	.half	1
+	.byte	84
+	.word	.L37-.L136,.L438-.L136
+	.half	1
+	.byte	88
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_arch_unprotect')
+	.sect	'.debug_loc'
+.L416:
+	.word	-1,.L164,0,.L489-.L164
+	.half	1
+	.byte	84
+	.word	0,0
+.L163:
+	.word	-1,.L164,0,.L415-.L164
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_init')
+	.sect	'.debug_loc'
+.L167:
+	.word	-1,.L168,0,.L412-.L168
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_mbox_free')
+	.sect	'.debug_loc'
+.L395:
+	.word	-1,.L144,0,.L452-.L144
+	.half	1
+	.byte	100
+	.word	.L453-.L144,.L394-.L144
+	.half	1
+	.byte	108
+	.word	0,0
+.L143:
+	.word	-1,.L144,0,.L451-.L144
+	.half	2
+	.byte	138,0
+	.word	.L451-.L144,.L394-.L144
+	.half	2
+	.byte	138,16
+	.word	.L394-.L144,.L394-.L144
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_mbox_new')
+	.sect	'.debug_loc'
+.L365:
+	.word	-1,.L142,0,.L447-.L142
+	.half	1
+	.byte	100
+	.word	.L448-.L142,.L363-.L142
+	.half	1
+	.byte	108
+	.word	0,0
+.L366:
+	.word	-1,.L142,0,.L51-.L142
+	.half	1
+	.byte	84
+	.word	.L50-.L142,.L363-.L142
+	.half	1
+	.byte	88
+	.word	.L449-.L142,.L450-.L142
+	.half	1
+	.byte	84
+	.word	0,0
+.L141:
+	.word	-1,.L142,0,.L446-.L142
+	.half	2
+	.byte	138,0
+	.word	.L446-.L142,.L363-.L142
+	.half	2
+	.byte	138,16
+	.word	.L363-.L142,.L363-.L142
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_mbox_post')
+	.sect	'.debug_loc'
+.L368:
+	.word	-1,.L146,0,.L455-.L146
+	.half	1
+	.byte	100
+	.word	.L456-.L146,.L367-.L146
+	.half	1
+	.byte	108
+	.word	0,0
+.L370:
+	.word	-1,.L146,0,.L367-.L146
+	.half	2
+	.byte	145,124
+	.word	0,.L65-.L146
+	.half	1
+	.byte	101
+	.word	0,0
+.L145:
+	.word	-1,.L146,0,.L454-.L146
+	.half	2
+	.byte	138,0
+	.word	.L454-.L146,.L367-.L146
+	.half	2
+	.byte	138,16
+	.word	.L367-.L146,.L367-.L146
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_mbox_set_invalid')
+	.sect	'.debug_loc'
+.L399:
+	.word	-1,.L158,0,.L398-.L158
+	.half	1
+	.byte	100
+	.word	0,0
+.L157:
+	.word	-1,.L158,0,.L398-.L158
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_mbox_trypost')
+	.sect	'.debug_loc'
+.L372:
+	.word	-1,.L148,0,.L458-.L148
+	.half	1
+	.byte	100
+	.word	.L459-.L148,.L371-.L148
+	.half	1
+	.byte	108
+	.word	0,0
+.L373:
+	.word	-1,.L148,0,.L371-.L148
+	.half	2
+	.byte	145,124
+	.word	0,.L70-.L148
+	.half	1
+	.byte	101
+	.word	0,0
+.L147:
+	.word	-1,.L148,0,.L457-.L148
+	.half	2
+	.byte	138,0
+	.word	.L457-.L148,.L371-.L148
+	.half	2
+	.byte	138,16
+	.word	.L371-.L148,.L371-.L148
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_mbox_trypost_fromisr')
+	.sect	'.debug_loc'
+.L377:
+	.word	-1,.L150,0,.L374-.L150
+	.half	2
+	.byte	145,120
+	.word	0,0
+.L375:
+	.word	-1,.L150,0,.L461-.L150
+	.half	1
+	.byte	100
+	.word	.L462-.L150,.L374-.L150
+	.half	1
+	.byte	108
+	.word	0,0
+.L376:
+	.word	-1,.L150,0,.L374-.L150
+	.half	2
+	.byte	145,116
+	.word	0,.L76-.L150
+	.half	1
+	.byte	101
+	.word	0,0
+.L149:
+	.word	-1,.L150,0,.L460-.L150
+	.half	2
+	.byte	138,0
+	.word	.L460-.L150,.L374-.L150
+	.half	2
+	.byte	138,24
+	.word	.L374-.L150,.L374-.L150
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L381:
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_mbox_valid')
+	.sect	'.debug_loc'
+.L397:
+	.word	-1,.L156,0,.L396-.L156
+	.half	1
+	.byte	100
+	.word	0,0
+.L155:
+	.word	-1,.L156,0,.L396-.L156
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_mutex_free')
+	.sect	'.debug_loc'
+.L337:
+	.word	-1,.L120,0,.L420-.L120
+	.half	1
+	.byte	100
+	.word	.L421-.L120,.L422-.L120
+	.half	1
+	.byte	111
+	.word	0,0
+.L119:
+	.word	-1,.L120,0,.L336-.L120
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_mutex_lock')
+	.sect	'.debug_loc'
+.L333:
+	.word	-1,.L122,0,.L424-.L122
+	.half	1
+	.byte	100
+	.word	.L13-.L122,.L332-.L122
+	.half	1
+	.byte	108
+	.word	0,0
+.L121:
+	.word	-1,.L122,0,.L423-.L122
+	.half	2
+	.byte	138,0
+	.word	.L423-.L122,.L332-.L122
+	.half	2
+	.byte	138,16
+	.word	.L332-.L122,.L332-.L122
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_mutex_new')
+	.sect	'.debug_loc'
+.L331:
+	.word	-1,.L118,0,.L419-.L118
+	.half	1
+	.byte	100
+	.word	.L3-.L118,.L329-.L118
+	.half	1
+	.byte	108
+	.word	0,0
+.L117:
+	.word	-1,.L118,0,.L418-.L118
+	.half	2
+	.byte	138,0
+	.word	.L418-.L118,.L329-.L118
+	.half	2
+	.byte	138,16
+	.word	.L329-.L118,.L329-.L118
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_mutex_set_invalid')
+	.sect	'.debug_loc'
+.L342:
+	.word	-1,.L128,0,.L341-.L128
+	.half	1
+	.byte	100
+	.word	0,0
+.L127:
+	.word	-1,.L128,0,.L341-.L128
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_mutex_unlock')
+	.sect	'.debug_loc'
+.L335:
+	.word	-1,.L124,0,.L426-.L124
+	.half	1
+	.byte	100
+	.word	.L16-.L124,.L334-.L124
+	.half	1
+	.byte	108
+	.word	0,0
+.L123:
+	.word	-1,.L124,0,.L425-.L124
+	.half	2
+	.byte	138,0
+	.word	.L425-.L124,.L334-.L124
+	.half	2
+	.byte	138,16
+	.word	.L334-.L124,.L334-.L124
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_mutex_valid')
+	.sect	'.debug_loc'
+.L340:
+	.word	-1,.L126,0,.L339-.L126
+	.half	1
+	.byte	100
+	.word	0,0
+.L125:
+	.word	-1,.L126,0,.L339-.L126
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_now')
+	.sect	'.debug_loc'
+.L165:
+	.word	-1,.L166,0,.L413-.L166
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_sem_free')
+	.sect	'.debug_loc'
+.L358:
+	.word	-1,.L132,0,.L430-.L132
+	.half	1
+	.byte	100
+	.word	.L431-.L132,.L432-.L132
+	.half	1
+	.byte	111
+	.word	0,0
+.L131:
+	.word	-1,.L132,0,.L357-.L132
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_sem_new')
+	.sect	'.debug_loc'
+.L346:
+	.word	-1,.L130,0,.L24-.L130
+	.half	1
+	.byte	84
+	.word	.L23-.L130,.L343-.L130
+	.half	1
+	.byte	88
+	.word	0,0
+.L345:
+	.word	-1,.L130,0,.L428-.L130
+	.half	1
+	.byte	100
+	.word	.L429-.L130,.L343-.L130
+	.half	1
+	.byte	108
+	.word	0,0
+.L129:
+	.word	-1,.L130,0,.L427-.L130
+	.half	2
+	.byte	138,0
+	.word	.L427-.L130,.L343-.L130
+	.half	2
+	.byte	138,16
+	.word	.L343-.L130,.L343-.L130
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_sem_set_invalid')
+	.sect	'.debug_loc'
+.L362:
+	.word	-1,.L140,0,.L361-.L140
+	.half	1
+	.byte	100
+	.word	0,0
+.L139:
+	.word	-1,.L140,0,.L361-.L140
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_sem_signal')
+	.sect	'.debug_loc'
+.L348:
+	.word	-1,.L134,0,.L434-.L134
+	.half	1
+	.byte	100
+	.word	.L34-.L134,.L347-.L134
+	.half	1
+	.byte	108
+	.word	0,0
+.L133:
+	.word	-1,.L134,0,.L433-.L134
+	.half	2
+	.byte	138,0
+	.word	.L433-.L134,.L347-.L134
+	.half	2
+	.byte	138,16
+	.word	.L347-.L134,.L347-.L134
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_sem_valid')
+	.sect	'.debug_loc'
+.L360:
+	.word	-1,.L138,0,.L359-.L138
+	.half	1
+	.byte	100
+	.word	0,0
+.L137:
+	.word	-1,.L138,0,.L359-.L138
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('sys_thread_new')
+	.sect	'.debug_loc'
+.L406:
+	.word	-1,.L160,0,.L482-.L160
+	.half	1
+	.byte	102
+	.word	0,0
+.L410:
+	.word	-1,.L160,0,.L401-.L160
+	.half	2
+	.byte	145,124
+	.word	0,0
+.L403:
+	.word	-1,.L160,0,.L483-.L160
+	.half	1
+	.byte	100
+	.word	.L486-.L160,.L487-.L160
+	.half	1
+	.byte	111
+	.word	.L485-.L160,.L482-.L160
+	.half	1
+	.byte	101
+	.word	.L104-.L160,.L107-.L160
+	.half	1
+	.byte	111
+	.word	0,0
+.L408:
+	.word	-1,.L160,0,.L482-.L160
+	.half	1
+	.byte	85
+	.word	0,0
+.L411:
+	.word	-1,.L160,.L488-.L160,.L482-.L160
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L407:
+	.word	-1,.L160,0,.L484-.L160
+	.half	1
+	.byte	84
+	.word	0,0
+.L159:
+	.word	-1,.L160,0,.L481-.L160
+	.half	2
+	.byte	138,0
+	.word	.L481-.L160,.L401-.L160
+	.half	2
+	.byte	138,16
+	.word	.L401-.L160,.L401-.L160
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L405:
+	.word	-1,.L160,0,.L485-.L160
+	.half	1
+	.byte	101
+	.word	.L483-.L160,.L482-.L160
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('vPortSetCCPN')
+	.sect	'.debug_loc'
+.L320:
+	.word	-1,.L112,0,.L318-.L112
+	.half	1
+	.byte	84
+	.word	0,0
+.L111:
+	.word	-1,.L112,0,.L318-.L112
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('vPortSetICR')
+	.sect	'.debug_loc'
+.L323:
+	.word	-1,.L114,0,.L321-.L114
+	.half	1
+	.byte	84
+	.word	0,0
+.L113:
+	.word	-1,.L114,0,.L321-.L114
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('xPortSetCCPN')
+	.sect	'.debug_loc'
+.L325:
+	.word	-1,.L116,0,.L324-.L116
+	.half	1
+	.byte	84
+	.word	0,0
+.L327:
+	.word	-1,.L116,.L417-.L116,.L324-.L116
+	.half	1
+	.byte	82
+	.word	0,0
+.L115:
+	.word	-1,.L116,0,.L324-.L116
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L737:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('vPortSetCCPN')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L737,.L112,.L318-.L112
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('vPortSetICR')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L737,.L114,.L321-.L114
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('xPortSetCCPN')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L737,.L116,.L324-.L116
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	.sdecl	'.debug_frame',debug,cluster('sys_mutex_new')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L737,.L118,.L329-.L118
+	.byte	4
+	.word	(.L418-.L118)/2
+	.byte	19,16,22,26,3,19,138,16,4
+	.word	(.L329-.L418)/2
+	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('sys_mutex_free')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L737,.L120,.L336-.L120
+	.sdecl	'.debug_frame',debug,cluster('sys_mutex_lock')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L737,.L122,.L332-.L122
+	.byte	4
+	.word	(.L423-.L122)/2
+	.byte	19,16,22,26,3,19,138,16,4
+	.word	(.L332-.L423)/2
+	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('sys_mutex_unlock')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L737,.L124,.L334-.L124
+	.byte	4
+	.word	(.L425-.L124)/2
+	.byte	19,16,22,26,3,19,138,16,4
+	.word	(.L334-.L425)/2
+	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('sys_mutex_valid')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L737,.L126,.L339-.L126
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('sys_mutex_set_invalid')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L737,.L128,.L341-.L128
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('sys_sem_new')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L737,.L130,.L343-.L130
+	.byte	4
+	.word	(.L427-.L130)/2
+	.byte	19,16,22,26,3,19,138,16,4
+	.word	(.L343-.L427)/2
+	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('sys_sem_free')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L737,.L132,.L357-.L132
+	.sdecl	'.debug_frame',debug,cluster('sys_sem_signal')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L737,.L134,.L347-.L134
+	.byte	4
+	.word	(.L433-.L134)/2
+	.byte	19,16,22,26,3,19,138,16,4
+	.word	(.L347-.L433)/2
+	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('sys_arch_sem_wait')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L737,.L136,.L350-.L136
+	.byte	4
+	.word	(.L435-.L136)/2
+	.byte	19,16,22,26,3,19,138,16,4
+	.word	(.L350-.L435)/2
+	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('sys_sem_valid')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L737,.L138,.L359-.L138
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('sys_sem_set_invalid')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L737,.L140,.L361-.L140
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('sys_mbox_new')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L737,.L142,.L363-.L142
+	.byte	4
+	.word	(.L446-.L142)/2
+	.byte	19,16,22,26,3,19,138,16,4
+	.word	(.L363-.L446)/2
+	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('sys_mbox_free')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L737,.L144,.L394-.L144
+	.byte	4
+	.word	(.L451-.L144)/2
+	.byte	19,16,22,26,3,19,138,16,4
+	.word	(.L394-.L451)/2
+	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('sys_mbox_post')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L737,.L146,.L367-.L146
+	.byte	4
+	.word	(.L454-.L146)/2
+	.byte	19,16,22,26,3,19,138,16,4
+	.word	(.L367-.L454)/2
+	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('sys_mbox_trypost')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L737,.L148,.L371-.L148
+	.byte	4
+	.word	(.L457-.L148)/2
+	.byte	19,16,22,26,3,19,138,16,4
+	.word	(.L371-.L457)/2
+	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('sys_mbox_trypost_fromisr')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L737,.L150,.L374-.L150
+	.byte	4
+	.word	(.L460-.L150)/2
+	.byte	19,24,22,26,3,19,138,24,4
+	.word	(.L374-.L460)/2
+	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('sys_arch_mbox_fetch')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L737,.L152,.L382-.L152
+	.byte	4
+	.word	(.L463-.L152)/2
+	.byte	19,16,22,26,3,19,138,16,4
+	.word	(.L382-.L463)/2
+	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('sys_arch_mbox_tryfetch')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L737,.L154,.L391-.L154
+	.byte	4
+	.word	(.L476-.L154)/2
+	.byte	19,16,22,26,3,19,138,16,4
+	.word	(.L391-.L476)/2
+	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('sys_mbox_valid')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L737,.L156,.L396-.L156
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('sys_mbox_set_invalid')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L737,.L158,.L398-.L158
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('sys_thread_new')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L737,.L160,.L401-.L160
+	.byte	4
+	.word	(.L481-.L160)/2
+	.byte	19,16,22,26,3,19,138,16,4
+	.word	(.L401-.L481)/2
+	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('sys_arch_protect')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L737,.L162,.L414-.L162
+	.sdecl	'.debug_frame',debug,cluster('sys_arch_unprotect')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L737,.L164,.L415-.L164
+	.sdecl	'.debug_frame',debug,cluster('sys_now')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L737,.L166,.L413-.L166
+	.sdecl	'.debug_frame',debug,cluster('sys_init')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L737,.L168,.L412-.L168
+	.byte	8,18,8,19,8,20,8,21,8,22,8,23
+	; Module end
