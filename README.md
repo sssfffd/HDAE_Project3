@@ -90,6 +90,12 @@
 
 <img width="1212" height="675" alt="Image" src="https://github.com/user-attachments/assets/2ece0c90-fa77-46fd-b48e-15c4a940b3e6" />
 
+<br>
+
+### SOME/IP 기반 모터 및 Lamp 제어(Chassis & Body)
+
+<img width="440" height="398" alt="Image" src="https://github.com/user-attachments/assets/5d2a18dc-0c33-488e-bf87-42ce23f8abac" />
+
 <br><br><br>
 
 ## Adaptive Cruise Control
@@ -112,6 +118,13 @@
 
 <br><br><br>
 
-## SOME/IP 기반 제어
 
 ## Real-Time OS
+
+<img width="631" height="417" alt="Image" src="https://github.com/user-attachments/assets/22b029e1-dd18-47c3-9abd-ff78ea20b641" />
+
+<br>
+
+<img width="877" height="413" alt="Image" src="https://github.com/user-attachments/assets/6b8834e2-1c48-4e42-a14a-c1aa76f40fcc" />
+
+<br><br><br>
