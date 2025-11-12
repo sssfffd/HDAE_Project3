@@ -45,9 +45,24 @@
 
 <img width="513" height="407" alt="Image" src="https://github.com/user-attachments/assets/3b0a2fa3-c719-4cc3-bf80-1d8a257de886" />
 
-<img width="852" height="420" alt="Image" src="https://github.com/user-attachments/assets/8dc17cad-a6e5-411b-a792-dc1b4e9e7e8c" />
+<img width="1152" height="517" alt="Image" src="https://github.com/user-attachments/assets/0394f7e7-c0ae-4d64-b734-af82f0d30f31" />
 
 <img width="912" height="355" alt="Image" src="https://github.com/user-attachments/assets/e3e78eed-1738-492d-8846-c589fcae0253" />
+
+<br><br><br>
+
+
+## SwRS, SAD, SDD
+
+<img width="1890" height="207" alt="Image" src="https://github.com/user-attachments/assets/dc64b6ca-9625-4637-a855-c9b7a7eab034" />
+
+<br><br>
+
+<img width="1841" height="206" alt="Image" src="https://github.com/user-attachments/assets/d5bf007b-37ea-4673-b67b-790e1e51c118" />
+
+<br><br>
+
+<img width="1898" height="671" alt="Image" src="https://github.com/user-attachments/assets/2e1ad563-f1a1-4b5a-97b5-fc933d85a22a" />
 
 <br><br><br>
 
@@ -96,3 +111,7 @@
 
 
 <br><br><br>
+
+## SOME/IP 기반 제어
+
+## Real-Time OS
