@@ -48,25 +48,22 @@
 <br><br><br>
 
 
-## SW Architecture
-### SW Structure
-<img width="687" height="334" alt="image" src="https://github.com/user-attachments/assets/0ac4349c-70eb-47a2-a633-847e904e6932" />
-<img width="909" height="282" alt="image" src="https://github.com/user-attachments/assets/8702eda1-40b0-4da4-bb35-081e4fa26bae" />
+## Lane Keeping Assist System
+### Moments & Centroid
+
+<img width="537" height="72" alt="Image" src="https://github.com/user-attachments/assets/6d32a351-8f89-42aa-be81-ca0515da261c" />
+
+<img width="237" height="81" alt="Image" src="https://github.com/user-attachments/assets/9a4caa24-6fee-49a2-b01e-b3d0efb613c1" />
 
 <br>
 
-### SW Architecture Design
-<img width="480" height="500" alt="image" src="https://github.com/user-attachments/assets/8a088114-55f5-407a-a4f4-260b00888048" />
+### Block Diagram
+<img width="1297" height="645" alt="Image" src="https://github.com/user-attachments/assets/86e94ca2-8d71-4c7b-af8f-b95501e0a712" />
 
 <br>
 
-<img width="912" height="409" alt="image" src="https://github.com/user-attachments/assets/111c371b-372d-405c-ae62-6e92c5f7933c" />
-<img width="805" height="399" alt="image" src="https://github.com/user-attachments/assets/da327a26-f430-4489-83ac-0bf17010dfcc" />
-
-<br>
-
-### System Architecture - MultiCore 구성
-<img width="901" height="318" alt="image" src="https://github.com/user-attachments/assets/af8ac4a1-c0cc-4dbb-9f36-9a154b99f564" />
+### Sequence Diagram
+<img width="1235" height="650" alt="Image" src="https://github.com/user-attachments/assets/14460897-c677-413e-8342-fe7fc94ee84f" />
 
 <br><br><br>
 
