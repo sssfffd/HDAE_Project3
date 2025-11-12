@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 3
+names: ['Box', 'Sign_A', 'Sign_B']
+
+roboflow:
+  workspace: objectdetection-th5n1
+  project: detection-ojjdv
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/objectdetection-th5n1/detection-ojjdv/dataset/2
