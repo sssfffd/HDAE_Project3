@@ -65,6 +65,12 @@
 ### Sequence Diagram
 <img width="1235" height="650" alt="Image" src="https://github.com/user-attachments/assets/14460897-c677-413e-8342-fe7fc94ee84f" />
 
+<br>
+
+### Dynamic Test
+
+<img width="1212" height="675" alt="Image" src="https://github.com/user-attachments/assets/2ece0c90-fa77-46fd-b48e-15c4a940b3e6" />
+
 <br><br><br>
 
 ## CAN Architecture
