@@ -89,7 +89,7 @@
 
 <img width="998" height="520" alt="Image" src="https://github.com/user-attachments/assets/37a1c004-81e1-42d0-9ea5-4efdf1478f80" />
 
-<br>
+<br><br><br>
 
 ## Object Detection
 <img width="972" height="516" alt="Image" src="https://github.com/user-attachments/assets/0ec31cf0-6227-4a28-8a40-61d0c881e7aa" />
