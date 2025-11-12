@@ -27,7 +27,7 @@
 
 ### 💻 Languages
 ![C](https://img.shields.io/badge/C-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
-![ino](https://img.shields.io/badge/ino%20Language-00979D?style=for-the-badge)
+![C++](https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 
 ### 🔧 Embedded System
 ![Infineon](https://img.shields.io/badge/Infineon-A8B400.svg?style=for-the-badge&logo=infineon&logoColor=white)
@@ -37,7 +37,6 @@
 ![Git](https://img.shields.io/badge/Git-F05032.svg?&style=for-the-badge&logo=Git&logoColor=white)
 ![AURIX Studio](https://img.shields.io/badge/AURIX%20Studio-0088CC.svg?style=for-the-badge)
 ![UDE Platform](https://img.shields.io/badge/UDEPlatform-D2232A.svg?style=for-the-badge)
-![JIRA](https://img.shields.io/badge/JIRA-0052CC.svg?style=for-the-badge&logo=jira&logoColor=white)
 ![VSCode](https://img.shields.io/badge/VSCode-007ACC.svg?&style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 <br><br>
